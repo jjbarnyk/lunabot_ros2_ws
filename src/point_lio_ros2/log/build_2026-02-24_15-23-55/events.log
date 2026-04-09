@@ -1,0 +1,1059 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (point_lio) JobQueued: {'identifier': 'point_lio', 'dependencies': OrderedDict()}
+[0.001124] (point_lio) JobStarted: {'identifier': 'point_lio'}
+[0.010152] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'cmake'}
+[0.010788] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/jjb/ros2_ws/src/point_lio_ros2', '-DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio'], 'cwd': '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jjb', 'SSH_CLIENT': '10.42.0.1 43798 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/jjb', 'OLDPWD': '/home/jjb/ros2_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jjb', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 43798 10.42.0.203 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.099754] (-) TimerEvent: {}
+[0.158343] (point_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199878] (-) TimerEvent: {}
+[0.258212] (point_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.284144] (point_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300013] (-) TimerEvent: {}
+[0.400379] (-) TimerEvent: {}
+[0.440261] (point_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.456181] (point_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.456541] (point_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.457102] (point_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.470721] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500517] (-) TimerEvent: {}
+[0.600902] (-) TimerEvent: {}
+[0.643070] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.659343] (point_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.659776] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.660479] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.661353] (point_lio) StdoutLine: {'line': b'-- Current CPU architecture: aarch64\n'}
+[0.663014] (point_lio) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.700984] (-) TimerEvent: {}
+[0.801302] (-) TimerEvent: {}
+[0.865634] (point_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.901444] (-) TimerEvent: {}
+[1.001808] (-) TimerEvent: {}
+[1.008444] (point_lio) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.049212] (point_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.065233] (point_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.084139] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.101870] (-) TimerEvent: {}
+[1.106026] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.197693] (point_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[1.200518] (point_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.201935] (-) TimerEvent: {}
+[1.302196] (-) TimerEvent: {}
+[1.319719] (point_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[1.343451] (point_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[1.377610] (point_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.402264] (-) TimerEvent: {}
+[1.465070] (point_lio) StdoutLine: {'line': b'-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[1.466233] (point_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.502342] (-) TimerEvent: {}
+[1.507200] (point_lio) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[1.541579] (point_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[1.572178] (point_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.6.2 (/opt/ros/jazzy/share/pcl_ros/cmake)\n'}
+[1.602409] (-) TimerEvent: {}
+[1.662036] (point_lio) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[1.662339] (point_lio) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[1.662431] (point_lio) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[1.662510] (point_lio) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[1.662588] (point_lio) StderrLine: {'line': b'\n'}
+[1.662660] (point_lio) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[1.662733] (point_lio) StderrLine: {'line': b'\n'}
+[1.662805] (point_lio) StderrLine: {'line': b'    /usr\n'}
+[1.662890] (point_lio) StderrLine: {'line': b'\n'}
+[1.662961] (point_lio) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[1.663060] (point_lio) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[1.663133] (point_lio) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.663203] (point_lio) StderrLine: {'line': b'  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[1.663273] (point_lio) StderrLine: {'line': b'  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[1.663344] (point_lio) StderrLine: {'line': b'  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[1.663415] (point_lio) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[1.663488] (point_lio) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[1.663571] (point_lio) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[1.663651] (point_lio) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)\n'}
+[1.663730] (point_lio) StderrLine: {'line': b'  CMakeLists.txt:45 (find_package)\n'}
+[1.663811] (point_lio) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.663889] (point_lio) StderrLine: {'line': b'\x1b[0m\n'}
+[1.664012] (point_lio) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[1.702549] (-) TimerEvent: {}
+[1.802953] (-) TimerEvent: {}
+[1.903368] (-) TimerEvent: {}
+[2.003723] (-) TimerEvent: {}
+[2.104167] (-) TimerEvent: {}
+[2.182557] (point_lio) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[2.183070] (point_lio) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5") found components: CXX \n'}
+[2.204236] (-) TimerEvent: {}
+[2.304541] (-) TimerEvent: {}
+[2.404899] (-) TimerEvent: {}
+[2.505276] (-) TimerEvent: {}
+[2.605652] (-) TimerEvent: {}
+[2.706012] (-) TimerEvent: {}
+[2.806311] (-) TimerEvent: {}
+[2.906604] (-) TimerEvent: {}
+[3.007004] (-) TimerEvent: {}
+[3.107360] (-) TimerEvent: {}
+[3.207760] (-) TimerEvent: {}
+[3.308269] (-) TimerEvent: {}
+[3.408645] (-) TimerEvent: {}
+[3.509184] (-) TimerEvent: {}
+[3.609736] (-) TimerEvent: {}
+[3.710114] (-) TimerEvent: {}
+[3.810483] (-) TimerEvent: {}
+[3.910847] (-) TimerEvent: {}
+[4.011211] (-) TimerEvent: {}
+[4.111547] (-) TimerEvent: {}
+[4.177219] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[4.202372] (point_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.27\n'}
+[4.211667] (-) TimerEvent: {}
+[4.267540] (point_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[4.269441] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.311761] (-) TimerEvent: {}
+[4.369890] (point_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.373279] (point_lio) StdoutLine: {'line': b'-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) \n'}
+[4.386274] (point_lio) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  \n'}
+[4.401710] (point_lio) StdoutLine: {'line': b'-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") \n'}
+[4.411839] (-) TimerEvent: {}
+[4.512119] (-) TimerEvent: {}
+[4.612506] (-) TimerEvent: {}
+[4.712917] (-) TimerEvent: {}
+[4.813296] (-) TimerEvent: {}
+[4.913543] (-) TimerEvent: {}
+[4.953161] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.964117] (point_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.013622] (-) TimerEvent: {}
+[5.113904] (-) TimerEvent: {}
+[5.214279] (-) TimerEvent: {}
+[5.314620] (-) TimerEvent: {}
+[5.414920] (-) TimerEvent: {}
+[5.495681] (point_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.515013] (-) TimerEvent: {}
+[5.615302] (-) TimerEvent: {}
+[5.715692] (-) TimerEvent: {}
+[5.816111] (-) TimerEvent: {}
+[5.916413] (-) TimerEvent: {}
+[6.016657] (-) TimerEvent: {}
+[6.047502] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[6.116745] (-) TimerEvent: {}
+[6.217050] (-) TimerEvent: {}
+[6.317427] (-) TimerEvent: {}
+[6.417748] (-) TimerEvent: {}
+[6.518015] (-) TimerEvent: {}
+[6.578773] (point_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[6.579918] (point_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[6.580988] (point_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[6.582029] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[6.583111] (point_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[6.584164] (point_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[6.584753] (point_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.14  \n'}
+[6.585296] (point_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  \n'}
+[6.586292] (point_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[6.587443] (point_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[6.588608] (point_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[6.589657] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[6.590898] (point_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[6.592111] (point_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[6.593270] (point_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[6.594490] (point_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[6.595676] (point_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[6.596837] (point_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[6.598162] (point_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[6.599295] (point_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[6.600561] (point_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  \n'}
+[6.601112] (point_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.14  \n'}
+[6.601696] (point_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  \n'}
+[6.602768] (point_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[6.603976] (point_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[6.618078] (-) TimerEvent: {}
+[6.718282] (-) TimerEvent: {}
+[6.782801] (point_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)\n'}
+[6.784703] (point_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.784849] (point_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[6.791190] (point_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)\n'}
+[6.818354] (-) TimerEvent: {}
+[6.918631] (-) TimerEvent: {}
+[6.986301] (point_lio) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:61 (find_package):\n'}
+[6.986571] (point_lio) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[6.986677] (point_lio) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[6.986773] (point_lio) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[6.986866] (point_lio) StderrLine: {'line': b'\n'}
+[6.986957] (point_lio) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[6.987076] (point_lio) StderrLine: {'line': b'\x1b[0m\n'}
+[7.008853] (point_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.12.so (found version "3.12.3") \n'}
+[7.018694] (-) TimerEvent: {}
+[7.118921] (-) TimerEvent: {}
+[7.174411] (point_lio) StdoutLine: {'line': b'-- Configuring done (7.1s)\n'}
+[7.219009] (-) TimerEvent: {}
+[7.278504] (point_lio) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[7.290137] (point_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio\n'}
+[7.319095] (-) TimerEvent: {}
+[7.336908] (point_lio) CommandEnded: {'returncode': 0}
+[7.337970] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'build'}
+[7.339049] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', '--', '-j4', '-l4'], 'cwd': '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jjb', 'SSH_CLIENT': '10.42.0.1 43798 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/jjb', 'OLDPWD': '/home/jjb/ros2_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jjb', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 43798 10.42.0.203 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[7.419216] (-) TimerEvent: {}
+[7.437939] (point_lio) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[7.438275] (point_lio) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o\x1b[0m\n'}
+[7.438380] (point_lio) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[7.438479] (point_lio) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[7.519347] (-) TimerEvent: {}
+[7.622185] (-) TimerEvent: {}
+[7.722615] (-) TimerEvent: {}
+[7.823040] (-) TimerEvent: {}
+[7.923522] (-) TimerEvent: {}
+[8.024108] (-) TimerEvent: {}
+[8.127250] (-) TimerEvent: {}
+[8.227686] (-) TimerEvent: {}
+[8.328368] (-) TimerEvent: {}
+[8.429281] (-) TimerEvent: {}
+[8.532327] (-) TimerEvent: {}
+[8.633361] (-) TimerEvent: {}
+[8.734019] (-) TimerEvent: {}
+[8.835296] (-) TimerEvent: {}
+[8.937722] (-) TimerEvent: {}
+[9.038433] (-) TimerEvent: {}
+[9.141289] (-) TimerEvent: {}
+[9.241983] (-) TimerEvent: {}
+[9.342697] (-) TimerEvent: {}
+[9.443296] (-) TimerEvent: {}
+[9.546299] (-) TimerEvent: {}
+[9.646723] (-) TimerEvent: {}
+[9.749068] (-) TimerEvent: {}
+[9.849515] (-) TimerEvent: {}
+[9.950116] (-) TimerEvent: {}
+[10.053294] (-) TimerEvent: {}
+[10.154086] (-) TimerEvent: {}
+[10.254767] (-) TimerEvent: {}
+[10.357093] (-) TimerEvent: {}
+[10.457579] (-) TimerEvent: {}
+[10.558024] (-) TimerEvent: {}
+[10.661080] (-) TimerEvent: {}
+[10.761494] (-) TimerEvent: {}
+[10.861906] (-) TimerEvent: {}
+[10.962317] (-) TimerEvent: {}
+[11.062728] (-) TimerEvent: {}
+[11.163157] (-) TimerEvent: {}
+[11.263603] (-) TimerEvent: {}
+[11.366075] (-) TimerEvent: {}
+[11.466518] (-) TimerEvent: {}
+[11.567001] (-) TimerEvent: {}
+[11.667443] (-) TimerEvent: {}
+[11.767894] (-) TimerEvent: {}
+[11.870087] (-) TimerEvent: {}
+[11.970545] (-) TimerEvent: {}
+[12.071038] (-) TimerEvent: {}
+[12.171469] (-) TimerEvent: {}
+[12.273079] (-) TimerEvent: {}
+[12.373751] (-) TimerEvent: {}
+[12.474189] (-) TimerEvent: {}
+[12.576085] (-) TimerEvent: {}
+[12.676531] (-) TimerEvent: {}
+[12.777013] (-) TimerEvent: {}
+[12.877429] (-) TimerEvent: {}
+[12.979098] (-) TimerEvent: {}
+[13.079554] (-) TimerEvent: {}
+[13.180052] (-) TimerEvent: {}
+[13.283082] (-) TimerEvent: {}
+[13.383545] (-) TimerEvent: {}
+[13.484029] (-) TimerEvent: {}
+[13.584478] (-) TimerEvent: {}
+[13.684934] (-) TimerEvent: {}
+[13.785387] (-) TimerEvent: {}
+[13.888070] (-) TimerEvent: {}
+[13.988493] (-) TimerEvent: {}
+[14.088912] (-) TimerEvent: {}
+[14.189360] (-) TimerEvent: {}
+[14.289854] (-) TimerEvent: {}
+[14.390358] (-) TimerEvent: {}
+[14.492286] (-) TimerEvent: {}
+[14.592765] (-) TimerEvent: {}
+[14.693221] (-) TimerEvent: {}
+[14.796070] (-) TimerEvent: {}
+[14.896496] (-) TimerEvent: {}
+[14.996956] (-) TimerEvent: {}
+[15.097400] (-) TimerEvent: {}
+[15.197845] (-) TimerEvent: {}
+[15.298291] (-) TimerEvent: {}
+[15.401067] (-) TimerEvent: {}
+[15.501500] (-) TimerEvent: {}
+[15.602006] (-) TimerEvent: {}
+[15.702437] (-) TimerEvent: {}
+[15.802885] (-) TimerEvent: {}
+[15.903329] (-) TimerEvent: {}
+[16.006069] (-) TimerEvent: {}
+[16.106487] (-) TimerEvent: {}
+[16.206929] (-) TimerEvent: {}
+[16.307396] (-) TimerEvent: {}
+[16.407843] (-) TimerEvent: {}
+[16.508317] (-) TimerEvent: {}
+[16.610301] (-) TimerEvent: {}
+[16.710714] (-) TimerEvent: {}
+[16.813154] (-) TimerEvent: {}
+[16.916076] (-) TimerEvent: {}
+[17.016502] (-) TimerEvent: {}
+[17.116948] (-) TimerEvent: {}
+[17.217381] (-) TimerEvent: {}
+[17.317815] (-) TimerEvent: {}
+[17.418300] (-) TimerEvent: {}
+[17.518729] (-) TimerEvent: {}
+[17.622321] (-) TimerEvent: {}
+[17.722808] (-) TimerEvent: {}
+[17.823258] (-) TimerEvent: {}
+[17.923711] (-) TimerEvent: {}
+[18.024148] (-) TimerEvent: {}
+[18.124579] (-) TimerEvent: {}
+[18.225039] (-) TimerEvent: {}
+[18.327110] (-) TimerEvent: {}
+[18.427575] (-) TimerEvent: {}
+[18.528031] (-) TimerEvent: {}
+[18.628468] (-) TimerEvent: {}
+[18.730071] (-) TimerEvent: {}
+[18.830536] (-) TimerEvent: {}
+[18.930989] (-) TimerEvent: {}
+[19.033075] (-) TimerEvent: {}
+[19.133513] (-) TimerEvent: {}
+[19.233945] (-) TimerEvent: {}
+[19.334396] (-) TimerEvent: {}
+[19.436326] (-) TimerEvent: {}
+[19.536791] (-) TimerEvent: {}
+[19.637253] (-) TimerEvent: {}
+[19.740071] (-) TimerEvent: {}
+[19.832067] (point_lio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o\x1b[0m\n'}
+[19.840213] (-) TimerEvent: {}
+[19.940644] (-) TimerEvent: {}
+[20.041060] (-) TimerEvent: {}
+[20.141449] (-) TimerEvent: {}
+[20.243065] (-) TimerEvent: {}
+[20.343676] (-) TimerEvent: {}
+[20.444080] (-) TimerEvent: {}
+[20.546081] (-) TimerEvent: {}
+[20.646511] (-) TimerEvent: {}
+[20.746962] (-) TimerEvent: {}
+[20.847386] (-) TimerEvent: {}
+[20.947785] (-) TimerEvent: {}
+[21.050068] (-) TimerEvent: {}
+[21.150471] (-) TimerEvent: {}
+[21.250896] (-) TimerEvent: {}
+[21.351331] (-) TimerEvent: {}
+[21.451730] (-) TimerEvent: {}
+[21.555236] (-) TimerEvent: {}
+[21.655676] (-) TimerEvent: {}
+[21.756078] (-) TimerEvent: {}
+[21.856494] (-) TimerEvent: {}
+[21.956910] (-) TimerEvent: {}
+[22.057370] (-) TimerEvent: {}
+[22.157866] (-) TimerEvent: {}
+[22.259269] (-) TimerEvent: {}
+[22.359713] (-) TimerEvent: {}
+[22.462098] (-) TimerEvent: {}
+[22.562564] (-) TimerEvent: {}
+[22.663076] (-) TimerEvent: {}
+[22.763514] (-) TimerEvent: {}
+[22.863985] (-) TimerEvent: {}
+[22.966062] (-) TimerEvent: {}
+[23.066541] (-) TimerEvent: {}
+[23.167076] (-) TimerEvent: {}
+[23.267487] (-) TimerEvent: {}
+[23.370067] (-) TimerEvent: {}
+[23.470503] (-) TimerEvent: {}
+[23.570900] (-) TimerEvent: {}
+[23.671345] (-) TimerEvent: {}
+[23.771785] (-) TimerEvent: {}
+[23.872239] (-) TimerEvent: {}
+[23.975064] (-) TimerEvent: {}
+[24.075452] (-) TimerEvent: {}
+[24.175866] (-) TimerEvent: {}
+[24.276263] (-) TimerEvent: {}
+[24.376638] (-) TimerEvent: {}
+[24.477064] (-) TimerEvent: {}
+[24.577490] (-) TimerEvent: {}
+[24.680246] (-) TimerEvent: {}
+[24.780641] (-) TimerEvent: {}
+[24.881028] (-) TimerEvent: {}
+[24.981432] (-) TimerEvent: {}
+[25.081862] (-) TimerEvent: {}
+[25.182275] (-) TimerEvent: {}
+[25.282622] (-) TimerEvent: {}
+[25.382993] (-) TimerEvent: {}
+[25.483380] (-) TimerEvent: {}
+[25.583741] (-) TimerEvent: {}
+[25.684075] (-) TimerEvent: {}
+[25.784420] (-) TimerEvent: {}
+[25.884781] (-) TimerEvent: {}
+[25.985097] (-) TimerEvent: {}
+[26.085406] (-) TimerEvent: {}
+[26.185698] (-) TimerEvent: {}
+[26.285992] (-) TimerEvent: {}
+[26.386278] (-) TimerEvent: {}
+[26.486573] (-) TimerEvent: {}
+[26.586853] (-) TimerEvent: {}
+[26.687140] (-) TimerEvent: {}
+[26.787419] (-) TimerEvent: {}
+[26.887709] (-) TimerEvent: {}
+[26.987999] (-) TimerEvent: {}
+[27.088307] (-) TimerEvent: {}
+[27.188608] (-) TimerEvent: {}
+[27.288903] (-) TimerEvent: {}
+[27.389246] (-) TimerEvent: {}
+[27.489538] (-) TimerEvent: {}
+[27.589833] (-) TimerEvent: {}
+[27.690151] (-) TimerEvent: {}
+[27.790469] (-) TimerEvent: {}
+[27.890770] (-) TimerEvent: {}
+[27.991087] (-) TimerEvent: {}
+[28.075432] (point_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83\x1b[m\x1b[K,\n'}
+[28.075713] (point_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50\x1b[m\x1b[K,\n'}
+[28.075842] (point_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4\x1b[m\x1b[K,\n'}
+[28.075932] (point_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:27\x1b[m\x1b[K:\n'}
+[28.076052] (point_lio) StderrLine: {'line': b'/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_FIter, _FIter> MTK::\x1b[01;32m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar&) \x1b[35m\x1b[K[with scalar = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[28.076149] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kscalar MTK::\x1b[01;32m\x1b[Kexp\x1b[m\x1b[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) \x1b[35m\x1b[K[with scalar = double; int n = 3]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[28.076255] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:168:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::\x1b[01;32m\x1b[Kpredict\x1b[m\x1b[K(double&, processnoisecovariance&, const input&, bool, bool) \x1b[35m\x1b[K[with state = state_output; int process_noise_dof = 30; input = input_ikfom; measurement = state_output; int measurement_noise_dof = 0; processnoisecovariance = Eigen::Matrix<double, 30, 30, 0, 30, 30>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[28.076348] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:1004:46:\x1b[m\x1b[K   required from here\n'}
+[28.076428] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[28.076511] (point_lio) StderrLine: {'line': b'  143 | std::pair<scalar, scalar> \x1b[01;36m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar &x2){\n'}
+[28.076589] (point_lio) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[28.091188] (-) TimerEvent: {}
+[28.191481] (-) TimerEvent: {}
+[28.291753] (-) TimerEvent: {}
+[28.392039] (-) TimerEvent: {}
+[28.492316] (-) TimerEvent: {}
+[28.592582] (-) TimerEvent: {}
+[28.692841] (-) TimerEvent: {}
+[28.793130] (-) TimerEvent: {}
+[28.893437] (-) TimerEvent: {}
+[28.993752] (-) TimerEvent: {}
+[29.094071] (-) TimerEvent: {}
+[29.194353] (-) TimerEvent: {}
+[29.294627] (-) TimerEvent: {}
+[29.394904] (-) TimerEvent: {}
+[29.495177] (-) TimerEvent: {}
+[29.595448] (-) TimerEvent: {}
+[29.695712] (-) TimerEvent: {}
+[29.795999] (-) TimerEvent: {}
+[29.896298] (-) TimerEvent: {}
+[29.996579] (-) TimerEvent: {}
+[30.096871] (-) TimerEvent: {}
+[30.197158] (-) TimerEvent: {}
+[30.297439] (-) TimerEvent: {}
+[30.397725] (-) TimerEvent: {}
+[30.498013] (-) TimerEvent: {}
+[30.598317] (-) TimerEvent: {}
+[30.698613] (-) TimerEvent: {}
+[30.798885] (-) TimerEvent: {}
+[30.899175] (-) TimerEvent: {}
+[30.999462] (-) TimerEvent: {}
+[31.099731] (-) TimerEvent: {}
+[31.200012] (-) TimerEvent: {}
+[31.300287] (-) TimerEvent: {}
+[31.400555] (-) TimerEvent: {}
+[31.500817] (-) TimerEvent: {}
+[31.601103] (-) TimerEvent: {}
+[31.701368] (-) TimerEvent: {}
+[31.801634] (-) TimerEvent: {}
+[31.901910] (-) TimerEvent: {}
+[32.002208] (-) TimerEvent: {}
+[32.102479] (-) TimerEvent: {}
+[32.202761] (-) TimerEvent: {}
+[32.303073] (-) TimerEvent: {}
+[32.403410] (-) TimerEvent: {}
+[32.503701] (-) TimerEvent: {}
+[32.603990] (-) TimerEvent: {}
+[32.704261] (-) TimerEvent: {}
+[32.804538] (-) TimerEvent: {}
+[32.904834] (-) TimerEvent: {}
+[33.005155] (-) TimerEvent: {}
+[33.105470] (-) TimerEvent: {}
+[33.205753] (-) TimerEvent: {}
+[33.306018] (-) TimerEvent: {}
+[33.406298] (-) TimerEvent: {}
+[33.506586] (-) TimerEvent: {}
+[33.606856] (-) TimerEvent: {}
+[33.707146] (-) TimerEvent: {}
+[33.807422] (-) TimerEvent: {}
+[33.907707] (-) TimerEvent: {}
+[34.008028] (-) TimerEvent: {}
+[34.108332] (-) TimerEvent: {}
+[34.208635] (-) TimerEvent: {}
+[34.308927] (-) TimerEvent: {}
+[34.409229] (-) TimerEvent: {}
+[34.509520] (-) TimerEvent: {}
+[34.609811] (-) TimerEvent: {}
+[34.710093] (-) TimerEvent: {}
+[34.810383] (-) TimerEvent: {}
+[34.811074] (point_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83\x1b[m\x1b[K,\n'}
+[34.811402] (point_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50\x1b[m\x1b[K,\n'}
+[34.811546] (point_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4\x1b[m\x1b[K,\n'}
+[34.811646] (point_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.cpp:2\x1b[m\x1b[K:\n'}
+[34.811737] (point_lio) StderrLine: {'line': b'/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<_FIter, _FIter> MTK::\x1b[01;32m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar&) \x1b[35m\x1b[K[with scalar = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[34.811837] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kscalar MTK::\x1b[01;32m\x1b[Kexp\x1b[m\x1b[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) \x1b[35m\x1b[K[with scalar = double; int n = 3]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[34.811950] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:334:32:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic MTK::SO3<_scalar, Options> MTK::SO3<_scalar, Options>::\x1b[01;32m\x1b[Kexp\x1b[m\x1b[K(const Eigen::Matrix<Type, 3, 1>&, scalar) \x1b[35m\x1b[K[with _scalar = double; int Options = 0; scalar = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[34.812081] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:242:18:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid MTK::SO3<_scalar, Options>::\x1b[01;32m\x1b[Kboxplus\x1b[m\x1b[K(MTK::vectview<const _scalar, MTK::SO3<_scalar, Options>::DOF>, scalar) \x1b[35m\x1b[K[with _scalar = double; int Options = 0; scalar = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[34.812179] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:38:1:\x1b[m\x1b[K   required from here\n'}
+[34.812265] (point_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[Kstd::pair<double, double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[34.812350] (point_lio) StderrLine: {'line': b'  143 | std::pair<scalar, scalar> \x1b[01;36m\x1b[Kcos_sinc_sqrt\x1b[m\x1b[K(const scalar &x2){\n'}
+[34.812447] (point_lio) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[34.910479] (-) TimerEvent: {}
+[35.010790] (-) TimerEvent: {}
+[35.111097] (-) TimerEvent: {}
+[35.211381] (-) TimerEvent: {}
+[35.311663] (-) TimerEvent: {}
+[35.411938] (-) TimerEvent: {}
+[35.512218] (-) TimerEvent: {}
+[35.612496] (-) TimerEvent: {}
+[35.712794] (-) TimerEvent: {}
+[35.813089] (-) TimerEvent: {}
+[35.913369] (-) TimerEvent: {}
+[36.013642] (-) TimerEvent: {}
+[36.113934] (-) TimerEvent: {}
+[36.214219] (-) TimerEvent: {}
+[36.314488] (-) TimerEvent: {}
+[36.414758] (-) TimerEvent: {}
+[36.515036] (-) TimerEvent: {}
+[36.615303] (-) TimerEvent: {}
+[36.715571] (-) TimerEvent: {}
+[36.815836] (-) TimerEvent: {}
+[36.916124] (-) TimerEvent: {}
+[37.016432] (-) TimerEvent: {}
+[37.116772] (-) TimerEvent: {}
+[37.217080] (-) TimerEvent: {}
+[37.317355] (-) TimerEvent: {}
+[37.417628] (-) TimerEvent: {}
+[37.517899] (-) TimerEvent: {}
+[37.618200] (-) TimerEvent: {}
+[37.718472] (-) TimerEvent: {}
+[37.818743] (-) TimerEvent: {}
+[37.919050] (-) TimerEvent: {}
+[38.019350] (-) TimerEvent: {}
+[38.119669] (-) TimerEvent: {}
+[38.219946] (-) TimerEvent: {}
+[38.320224] (-) TimerEvent: {}
+[38.420505] (-) TimerEvent: {}
+[38.520781] (-) TimerEvent: {}
+[38.621045] (-) TimerEvent: {}
+[38.721309] (-) TimerEvent: {}
+[38.821581] (-) TimerEvent: {}
+[38.921870] (-) TimerEvent: {}
+[39.022181] (-) TimerEvent: {}
+[39.122482] (-) TimerEvent: {}
+[39.222810] (-) TimerEvent: {}
+[39.323128] (-) TimerEvent: {}
+[39.423403] (-) TimerEvent: {}
+[39.523664] (-) TimerEvent: {}
+[39.623983] (-) TimerEvent: {}
+[39.724305] (-) TimerEvent: {}
+[39.824598] (-) TimerEvent: {}
+[39.924885] (-) TimerEvent: {}
+[40.025180] (-) TimerEvent: {}
+[40.125440] (-) TimerEvent: {}
+[40.225759] (-) TimerEvent: {}
+[40.326105] (-) TimerEvent: {}
+[40.426389] (-) TimerEvent: {}
+[40.526669] (-) TimerEvent: {}
+[40.626999] (-) TimerEvent: {}
+[40.727338] (-) TimerEvent: {}
+[40.827664] (-) TimerEvent: {}
+[40.927993] (-) TimerEvent: {}
+[41.028298] (-) TimerEvent: {}
+[41.128611] (-) TimerEvent: {}
+[41.228922] (-) TimerEvent: {}
+[41.329215] (-) TimerEvent: {}
+[41.429534] (-) TimerEvent: {}
+[41.529867] (-) TimerEvent: {}
+[41.630180] (-) TimerEvent: {}
+[41.730483] (-) TimerEvent: {}
+[41.830771] (-) TimerEvent: {}
+[41.931066] (-) TimerEvent: {}
+[42.031352] (-) TimerEvent: {}
+[42.131633] (-) TimerEvent: {}
+[42.231925] (-) TimerEvent: {}
+[42.332254] (-) TimerEvent: {}
+[42.432584] (-) TimerEvent: {}
+[42.532884] (-) TimerEvent: {}
+[42.633190] (-) TimerEvent: {}
+[42.733477] (-) TimerEvent: {}
+[42.833793] (-) TimerEvent: {}
+[42.934147] (-) TimerEvent: {}
+[43.034462] (-) TimerEvent: {}
+[43.134766] (-) TimerEvent: {}
+[43.235071] (-) TimerEvent: {}
+[43.335367] (-) TimerEvent: {}
+[43.435664] (-) TimerEvent: {}
+[43.535953] (-) TimerEvent: {}
+[43.636241] (-) TimerEvent: {}
+[43.736515] (-) TimerEvent: {}
+[43.836807] (-) TimerEvent: {}
+[43.937135] (-) TimerEvent: {}
+[44.037421] (-) TimerEvent: {}
+[44.137698] (-) TimerEvent: {}
+[44.238004] (-) TimerEvent: {}
+[44.338303] (-) TimerEvent: {}
+[44.438606] (-) TimerEvent: {}
+[44.538913] (-) TimerEvent: {}
+[44.639205] (-) TimerEvent: {}
+[44.739509] (-) TimerEvent: {}
+[44.839817] (-) TimerEvent: {}
+[44.940124] (-) TimerEvent: {}
+[45.040430] (-) TimerEvent: {}
+[45.140779] (-) TimerEvent: {}
+[45.241103] (-) TimerEvent: {}
+[45.341419] (-) TimerEvent: {}
+[45.441744] (-) TimerEvent: {}
+[45.542047] (-) TimerEvent: {}
+[45.642279] (-) TimerEvent: {}
+[45.742487] (-) TimerEvent: {}
+[45.842688] (-) TimerEvent: {}
+[45.942925] (-) TimerEvent: {}
+[46.043176] (-) TimerEvent: {}
+[46.143409] (-) TimerEvent: {}
+[46.243625] (-) TimerEvent: {}
+[46.343843] (-) TimerEvent: {}
+[46.444066] (-) TimerEvent: {}
+[46.544285] (-) TimerEvent: {}
+[46.644485] (-) TimerEvent: {}
+[46.744677] (-) TimerEvent: {}
+[46.844880] (-) TimerEvent: {}
+[46.945090] (-) TimerEvent: {}
+[47.045292] (-) TimerEvent: {}
+[47.145495] (-) TimerEvent: {}
+[47.245698] (-) TimerEvent: {}
+[47.345894] (-) TimerEvent: {}
+[47.446083] (-) TimerEvent: {}
+[47.546256] (-) TimerEvent: {}
+[47.646419] (-) TimerEvent: {}
+[47.746617] (-) TimerEvent: {}
+[47.846838] (-) TimerEvent: {}
+[47.947041] (-) TimerEvent: {}
+[48.047277] (-) TimerEvent: {}
+[48.147576] (-) TimerEvent: {}
+[48.247815] (-) TimerEvent: {}
+[48.348036] (-) TimerEvent: {}
+[48.448248] (-) TimerEvent: {}
+[48.548474] (-) TimerEvent: {}
+[48.648686] (-) TimerEvent: {}
+[48.748880] (-) TimerEvent: {}
+[48.849092] (-) TimerEvent: {}
+[48.949302] (-) TimerEvent: {}
+[49.049524] (-) TimerEvent: {}
+[49.149782] (-) TimerEvent: {}
+[49.250003] (-) TimerEvent: {}
+[49.350226] (-) TimerEvent: {}
+[49.450444] (-) TimerEvent: {}
+[49.550650] (-) TimerEvent: {}
+[49.650833] (-) TimerEvent: {}
+[49.751013] (-) TimerEvent: {}
+[49.851197] (-) TimerEvent: {}
+[49.951387] (-) TimerEvent: {}
+[50.051583] (-) TimerEvent: {}
+[50.151794] (-) TimerEvent: {}
+[50.252011] (-) TimerEvent: {}
+[50.352215] (-) TimerEvent: {}
+[50.452417] (-) TimerEvent: {}
+[50.552618] (-) TimerEvent: {}
+[50.652812] (-) TimerEvent: {}
+[50.753004] (-) TimerEvent: {}
+[50.853212] (-) TimerEvent: {}
+[50.953430] (-) TimerEvent: {}
+[51.053642] (-) TimerEvent: {}
+[51.153853] (-) TimerEvent: {}
+[51.254065] (-) TimerEvent: {}
+[51.354261] (-) TimerEvent: {}
+[51.454458] (-) TimerEvent: {}
+[51.554648] (-) TimerEvent: {}
+[51.654834] (-) TimerEvent: {}
+[51.755020] (-) TimerEvent: {}
+[51.855210] (-) TimerEvent: {}
+[51.955402] (-) TimerEvent: {}
+[52.055589] (-) TimerEvent: {}
+[52.155771] (-) TimerEvent: {}
+[52.255951] (-) TimerEvent: {}
+[52.356148] (-) TimerEvent: {}
+[52.456335] (-) TimerEvent: {}
+[52.556537] (-) TimerEvent: {}
+[52.656738] (-) TimerEvent: {}
+[52.756923] (-) TimerEvent: {}
+[52.857128] (-) TimerEvent: {}
+[52.957334] (-) TimerEvent: {}
+[53.057565] (-) TimerEvent: {}
+[53.157848] (-) TimerEvent: {}
+[53.258103] (-) TimerEvent: {}
+[53.358316] (-) TimerEvent: {}
+[53.458540] (-) TimerEvent: {}
+[53.558748] (-) TimerEvent: {}
+[53.658948] (-) TimerEvent: {}
+[53.759187] (-) TimerEvent: {}
+[53.859477] (-) TimerEvent: {}
+[53.959728] (-) TimerEvent: {}
+[54.059946] (-) TimerEvent: {}
+[54.160165] (-) TimerEvent: {}
+[54.260368] (-) TimerEvent: {}
+[54.360582] (-) TimerEvent: {}
+[54.460819] (-) TimerEvent: {}
+[54.561041] (-) TimerEvent: {}
+[54.661246] (-) TimerEvent: {}
+[54.761461] (-) TimerEvent: {}
+[54.861711] (-) TimerEvent: {}
+[54.961932] (-) TimerEvent: {}
+[55.062168] (-) TimerEvent: {}
+[55.162394] (-) TimerEvent: {}
+[55.262594] (-) TimerEvent: {}
+[55.362788] (-) TimerEvent: {}
+[55.462987] (-) TimerEvent: {}
+[55.563177] (-) TimerEvent: {}
+[55.663382] (-) TimerEvent: {}
+[55.763614] (-) TimerEvent: {}
+[55.863811] (-) TimerEvent: {}
+[55.964016] (-) TimerEvent: {}
+[56.064216] (-) TimerEvent: {}
+[56.164412] (-) TimerEvent: {}
+[56.264601] (-) TimerEvent: {}
+[56.364782] (-) TimerEvent: {}
+[56.464983] (-) TimerEvent: {}
+[56.565175] (-) TimerEvent: {}
+[56.665363] (-) TimerEvent: {}
+[56.765543] (-) TimerEvent: {}
+[56.865719] (-) TimerEvent: {}
+[56.965901] (-) TimerEvent: {}
+[57.066122] (-) TimerEvent: {}
+[57.166360] (-) TimerEvent: {}
+[57.266575] (-) TimerEvent: {}
+[57.366770] (-) TimerEvent: {}
+[57.466961] (-) TimerEvent: {}
+[57.567177] (-) TimerEvent: {}
+[57.667382] (-) TimerEvent: {}
+[57.767573] (-) TimerEvent: {}
+[57.867753] (-) TimerEvent: {}
+[57.967937] (-) TimerEvent: {}
+[58.068183] (-) TimerEvent: {}
+[58.168447] (-) TimerEvent: {}
+[58.268678] (-) TimerEvent: {}
+[58.368906] (-) TimerEvent: {}
+[58.469155] (-) TimerEvent: {}
+[58.569391] (-) TimerEvent: {}
+[58.669601] (-) TimerEvent: {}
+[58.769794] (-) TimerEvent: {}
+[58.869996] (-) TimerEvent: {}
+[58.970192] (-) TimerEvent: {}
+[59.070402] (-) TimerEvent: {}
+[59.170608] (-) TimerEvent: {}
+[59.270799] (-) TimerEvent: {}
+[59.370993] (-) TimerEvent: {}
+[59.471182] (-) TimerEvent: {}
+[59.571414] (-) TimerEvent: {}
+[59.671642] (-) TimerEvent: {}
+[59.771849] (-) TimerEvent: {}
+[59.872038] (-) TimerEvent: {}
+[59.972229] (-) TimerEvent: {}
+[60.072474] (-) TimerEvent: {}
+[60.172757] (-) TimerEvent: {}
+[60.272993] (-) TimerEvent: {}
+[60.373204] (-) TimerEvent: {}
+[60.473402] (-) TimerEvent: {}
+[60.573613] (-) TimerEvent: {}
+[60.673815] (-) TimerEvent: {}
+[60.774010] (-) TimerEvent: {}
+[60.874197] (-) TimerEvent: {}
+[60.974378] (-) TimerEvent: {}
+[61.074620] (-) TimerEvent: {}
+[61.174873] (-) TimerEvent: {}
+[61.275100] (-) TimerEvent: {}
+[61.375305] (-) TimerEvent: {}
+[61.475490] (-) TimerEvent: {}
+[61.575678] (-) TimerEvent: {}
+[61.675878] (-) TimerEvent: {}
+[61.776097] (-) TimerEvent: {}
+[61.876295] (-) TimerEvent: {}
+[61.976478] (-) TimerEvent: {}
+[62.076670] (-) TimerEvent: {}
+[62.176888] (-) TimerEvent: {}
+[62.277100] (-) TimerEvent: {}
+[62.377301] (-) TimerEvent: {}
+[62.477501] (-) TimerEvent: {}
+[62.577691] (-) TimerEvent: {}
+[62.677882] (-) TimerEvent: {}
+[62.778078] (-) TimerEvent: {}
+[62.878266] (-) TimerEvent: {}
+[62.978445] (-) TimerEvent: {}
+[63.078636] (-) TimerEvent: {}
+[63.178854] (-) TimerEvent: {}
+[63.279085] (-) TimerEvent: {}
+[63.379304] (-) TimerEvent: {}
+[63.479520] (-) TimerEvent: {}
+[63.579708] (-) TimerEvent: {}
+[63.679903] (-) TimerEvent: {}
+[63.780114] (-) TimerEvent: {}
+[63.880307] (-) TimerEvent: {}
+[63.980500] (-) TimerEvent: {}
+[64.080689] (-) TimerEvent: {}
+[64.180894] (-) TimerEvent: {}
+[64.281118] (-) TimerEvent: {}
+[64.381313] (-) TimerEvent: {}
+[64.481506] (-) TimerEvent: {}
+[64.581701] (-) TimerEvent: {}
+[64.681923] (-) TimerEvent: {}
+[64.782162] (-) TimerEvent: {}
+[64.882399] (-) TimerEvent: {}
+[64.982618] (-) TimerEvent: {}
+[65.082847] (-) TimerEvent: {}
+[65.183082] (-) TimerEvent: {}
+[65.283285] (-) TimerEvent: {}
+[65.383535] (-) TimerEvent: {}
+[65.483886] (-) TimerEvent: {}
+[65.584193] (-) TimerEvent: {}
+[65.684432] (-) TimerEvent: {}
+[65.784656] (-) TimerEvent: {}
+[65.884872] (-) TimerEvent: {}
+[65.985091] (-) TimerEvent: {}
+[66.085300] (-) TimerEvent: {}
+[66.185522] (-) TimerEvent: {}
+[66.285739] (-) TimerEvent: {}
+[66.385948] (-) TimerEvent: {}
+[66.486166] (-) TimerEvent: {}
+[66.586360] (-) TimerEvent: {}
+[66.686561] (-) TimerEvent: {}
+[66.786751] (-) TimerEvent: {}
+[66.886948] (-) TimerEvent: {}
+[66.987156] (-) TimerEvent: {}
+[67.087367] (-) TimerEvent: {}
+[67.187574] (-) TimerEvent: {}
+[67.287779] (-) TimerEvent: {}
+[67.387984] (-) TimerEvent: {}
+[67.488171] (-) TimerEvent: {}
+[67.588357] (-) TimerEvent: {}
+[67.688547] (-) TimerEvent: {}
+[67.788734] (-) TimerEvent: {}
+[67.888925] (-) TimerEvent: {}
+[67.989131] (-) TimerEvent: {}
+[68.089327] (-) TimerEvent: {}
+[68.189521] (-) TimerEvent: {}
+[68.289716] (-) TimerEvent: {}
+[68.389932] (-) TimerEvent: {}
+[68.490143] (-) TimerEvent: {}
+[68.590341] (-) TimerEvent: {}
+[68.690544] (-) TimerEvent: {}
+[68.790759] (-) TimerEvent: {}
+[68.890957] (-) TimerEvent: {}
+[68.991190] (-) TimerEvent: {}
+[69.091446] (-) TimerEvent: {}
+[69.191665] (-) TimerEvent: {}
+[69.291872] (-) TimerEvent: {}
+[69.392088] (-) TimerEvent: {}
+[69.492285] (-) TimerEvent: {}
+[69.592473] (-) TimerEvent: {}
+[69.692673] (-) TimerEvent: {}
+[69.792890] (-) TimerEvent: {}
+[69.893123] (-) TimerEvent: {}
+[69.993337] (-) TimerEvent: {}
+[70.093549] (-) TimerEvent: {}
+[70.193756] (-) TimerEvent: {}
+[70.293956] (-) TimerEvent: {}
+[70.394187] (-) TimerEvent: {}
+[70.494422] (-) TimerEvent: {}
+[70.594642] (-) TimerEvent: {}
+[70.694887] (-) TimerEvent: {}
+[70.795120] (-) TimerEvent: {}
+[70.895328] (-) TimerEvent: {}
+[70.995548] (-) TimerEvent: {}
+[71.095764] (-) TimerEvent: {}
+[71.195975] (-) TimerEvent: {}
+[71.296167] (-) TimerEvent: {}
+[71.396361] (-) TimerEvent: {}
+[71.496553] (-) TimerEvent: {}
+[71.596741] (-) TimerEvent: {}
+[71.696936] (-) TimerEvent: {}
+[71.797137] (-) TimerEvent: {}
+[71.897324] (-) TimerEvent: {}
+[71.997510] (-) TimerEvent: {}
+[72.097690] (-) TimerEvent: {}
+[72.197878] (-) TimerEvent: {}
+[72.298074] (-) TimerEvent: {}
+[72.398269] (-) TimerEvent: {}
+[72.498480] (-) TimerEvent: {}
+[72.598683] (-) TimerEvent: {}
+[72.698879] (-) TimerEvent: {}
+[72.799080] (-) TimerEvent: {}
+[72.899269] (-) TimerEvent: {}
+[72.999473] (-) TimerEvent: {}
+[73.099711] (-) TimerEvent: {}
+[73.199923] (-) TimerEvent: {}
+[73.300131] (-) TimerEvent: {}
+[73.400323] (-) TimerEvent: {}
+[73.500519] (-) TimerEvent: {}
+[73.600706] (-) TimerEvent: {}
+[73.700902] (-) TimerEvent: {}
+[73.801104] (-) TimerEvent: {}
+[73.901308] (-) TimerEvent: {}
+[74.001509] (-) TimerEvent: {}
+[74.101725] (-) TimerEvent: {}
+[74.201947] (-) TimerEvent: {}
+[74.302181] (-) TimerEvent: {}
+[74.402374] (-) TimerEvent: {}
+[74.502581] (-) TimerEvent: {}
+[74.602778] (-) TimerEvent: {}
+[74.702982] (-) TimerEvent: {}
+[74.803190] (-) TimerEvent: {}
+[74.903460] (-) TimerEvent: {}
+[75.003678] (-) TimerEvent: {}
+[75.103880] (-) TimerEvent: {}
+[75.204116] (-) TimerEvent: {}
+[75.304306] (-) TimerEvent: {}
+[75.404492] (-) TimerEvent: {}
+[75.504685] (-) TimerEvent: {}
+[75.604894] (-) TimerEvent: {}
+[75.705136] (-) TimerEvent: {}
+[75.805326] (-) TimerEvent: {}
+[75.905553] (-) TimerEvent: {}
+[76.005871] (-) TimerEvent: {}
+[76.106087] (-) TimerEvent: {}
+[76.206286] (-) TimerEvent: {}
+[76.306478] (-) TimerEvent: {}
+[76.406677] (-) TimerEvent: {}
+[76.506888] (-) TimerEvent: {}
+[76.607091] (-) TimerEvent: {}
+[76.707280] (-) TimerEvent: {}
+[76.807458] (-) TimerEvent: {}
+[76.907636] (-) TimerEvent: {}
+[77.007834] (-) TimerEvent: {}
+[77.108090] (-) TimerEvent: {}
+[77.208316] (-) TimerEvent: {}
+[77.308516] (-) TimerEvent: {}
+[77.408702] (-) TimerEvent: {}
+[77.508890] (-) TimerEvent: {}
+[77.609098] (-) TimerEvent: {}
+[77.709302] (-) TimerEvent: {}
+[77.809483] (-) TimerEvent: {}
+[77.909663] (-) TimerEvent: {}
+[78.009859] (-) TimerEvent: {}
+[78.110119] (-) TimerEvent: {}
+[78.210348] (-) TimerEvent: {}
+[78.310538] (-) TimerEvent: {}
+[78.410731] (-) TimerEvent: {}
+[78.510926] (-) TimerEvent: {}
+[78.611137] (-) TimerEvent: {}
+[78.711335] (-) TimerEvent: {}
+[78.811528] (-) TimerEvent: {}
+[78.911729] (-) TimerEvent: {}
+[79.011970] (-) TimerEvent: {}
+[79.112221] (-) TimerEvent: {}
+[79.212434] (-) TimerEvent: {}
+[79.312639] (-) TimerEvent: {}
+[79.412850] (-) TimerEvent: {}
+[79.513037] (-) TimerEvent: {}
+[79.613238] (-) TimerEvent: {}
+[79.713442] (-) TimerEvent: {}
+[79.813635] (-) TimerEvent: {}
+[79.913826] (-) TimerEvent: {}
+[80.014059] (-) TimerEvent: {}
+[80.114380] (-) TimerEvent: {}
+[80.214597] (-) TimerEvent: {}
+[80.314799] (-) TimerEvent: {}
+[80.415000] (-) TimerEvent: {}
+[80.515210] (-) TimerEvent: {}
+[80.615427] (-) TimerEvent: {}
+[80.715656] (-) TimerEvent: {}
+[80.815879] (-) TimerEvent: {}
+[80.916085] (-) TimerEvent: {}
+[81.016300] (-) TimerEvent: {}
+[81.116549] (-) TimerEvent: {}
+[81.216772] (-) TimerEvent: {}
+[81.316990] (-) TimerEvent: {}
+[81.417181] (-) TimerEvent: {}
+[81.517364] (-) TimerEvent: {}
+[81.617552] (-) TimerEvent: {}
+[81.717748] (-) TimerEvent: {}
+[81.817946] (-) TimerEvent: {}
+[81.918155] (-) TimerEvent: {}
+[82.018367] (-) TimerEvent: {}
+[82.118577] (-) TimerEvent: {}
+[82.218773] (-) TimerEvent: {}
+[82.319014] (-) TimerEvent: {}
+[82.419246] (-) TimerEvent: {}
+[82.519518] (-) TimerEvent: {}
+[82.619747] (-) TimerEvent: {}
+[82.719958] (-) TimerEvent: {}
+[82.820167] (-) TimerEvent: {}
+[82.920393] (-) TimerEvent: {}
+[83.020717] (-) TimerEvent: {}
+[83.031781] (point_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointlio_mapping\x1b[0m\n'}
+[83.120849] (-) TimerEvent: {}
+[83.221288] (-) TimerEvent: {}
+[83.321655] (-) TimerEvent: {}
+[83.422098] (-) TimerEvent: {}
+[83.522667] (-) TimerEvent: {}
+[83.623054] (-) TimerEvent: {}
+[83.723472] (-) TimerEvent: {}
+[83.823886] (-) TimerEvent: {}
+[83.924532] (-) TimerEvent: {}
+[84.025043] (-) TimerEvent: {}
+[84.125411] (-) TimerEvent: {}
+[84.225773] (-) TimerEvent: {}
+[84.326336] (-) TimerEvent: {}
+[84.426678] (-) TimerEvent: {}
+[84.527068] (-) TimerEvent: {}
+[84.627551] (-) TimerEvent: {}
+[84.727921] (-) TimerEvent: {}
+[84.828544] (-) TimerEvent: {}
+[84.929025] (-) TimerEvent: {}
+[85.029429] (-) TimerEvent: {}
+[85.129886] (-) TimerEvent: {}
+[85.230551] (-) TimerEvent: {}
+[85.331237] (-) TimerEvent: {}
+[85.431906] (-) TimerEvent: {}
+[85.532644] (-) TimerEvent: {}
+[85.633088] (-) TimerEvent: {}
+[85.733688] (-) TimerEvent: {}
+[85.834304] (-) TimerEvent: {}
+[85.934749] (-) TimerEvent: {}
+[86.035063] (-) TimerEvent: {}
+[86.135479] (-) TimerEvent: {}
+[86.236085] (-) TimerEvent: {}
+[86.336493] (-) TimerEvent: {}
+[86.436891] (-) TimerEvent: {}
+[86.537500] (-) TimerEvent: {}
+[86.637875] (-) TimerEvent: {}
+[86.738167] (-) TimerEvent: {}
+[86.838503] (-) TimerEvent: {}
+[86.938858] (-) TimerEvent: {}
+[87.039135] (-) TimerEvent: {}
+[87.080669] (point_lio) StdoutLine: {'line': b'[100%] Built target pointlio_mapping\n'}
+[87.102546] (point_lio) CommandEnded: {'returncode': 0}
+[87.109098] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'install'}
+[87.120431] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio'], 'cwd': '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'jjb', 'SSH_CLIENT': '10.42.0.1 43798 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/jjb', 'OLDPWD': '/home/jjb/ros2_ws/src', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jjb', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '9', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.42.0.1 43798 10.42.0.203 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[87.138867] (point_lio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[87.139143] (-) TimerEvent: {}
+[87.139310] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/lib/point_lio/pointlio_mapping\n'}
+[87.144639] (point_lio) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/lib/point_lio/pointlio_mapping" to ""\n'}
+[87.144889] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config\n'}
+[87.145072] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/mid360.yaml\n'}
+[87.145212] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/horizon.yaml\n'}
+[87.145340] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/unilidar_l1.yaml\n'}
+[87.145489] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/velody16.yaml\n'}
+[87.145627] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/avia.yaml\n'}
+[87.145772] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/unilidar_l2.yaml\n'}
+[87.145919] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/ouster64.yaml\n'}
+[87.146077] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch\n'}
+[87.146201] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py\n'}
+[87.146359] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_avia.launch.py\n'}
+[87.146504] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py\n'}
+[87.146651] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py\n'}
+[87.146798] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py\n'}
+[87.146943] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py\n'}
+[87.147102] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py\n'}
+[87.147250] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py\n'}
+[87.147395] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py\n'}
+[87.147541] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py\n'}
+[87.147683] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/rviz_cfg\n'}
+[87.147816] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz\n'}
+[87.148167] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio\n'}
+[87.148709] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio\n'}
+[87.149234] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/ament_prefix_path.sh\n'}
+[87.149434] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv\n'}
+[87.149865] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/path.sh\n'}
+[87.150073] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/path.dsv\n'}
+[87.150489] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.bash\n'}
+[87.150914] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.sh\n'}
+[87.151382] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.zsh\n'}
+[87.151759] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.dsv\n'}
+[87.152138] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/package.dsv\n'}
+[87.152581] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/ament_index/resource_index/packages/point_lio\n'}
+[87.152792] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[87.153175] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake\n'}
+[87.153524] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake\n'}
+[87.153892] (point_lio) StdoutLine: {'line': b'-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/package.xml\n'}
+[87.156744] (point_lio) CommandEnded: {'returncode': 0}
+[87.182475] (point_lio) JobEnded: {'identifier': 'point_lio', 'rc': 0}
+[87.183726] (-) EventReactorShutdown: {}

@@ -1,0 +1,177 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Current CPU architecture: aarch64
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found pcl_ros: 2.6.2 (/opt/ros/jazzy/share/pcl_ros/cmake)
+[33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /usr
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+  /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+  /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+  /opt/ros/jazzy/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+  CMakeLists.txt:45 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found flann version 1.9.2
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.27
+-- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+-- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+-- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+-- Found PCL_2D: /usr/include/pcl-1.14  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+-- Found PCL_MODELER: /usr/include/pcl-1.14  
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+-- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[33mCMake Warning (dev) at CMakeLists.txt:61 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.12.so (found version "3.12.3") 
+-- Configuring done (7.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/jjb/ros2_ws/src/point_lio_ros2/build/point_lio
+[ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+In file included from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+                 from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+                 from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4[m[K,
+                 from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:27[m[K:
+/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::[01;32m[Kcos_sinc_sqrt[m[K(const scalar&) [35m[K[with scalar = double][m[K[m[K’:
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::[01;32m[Kexp[m[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) [35m[K[with scalar = double; int n = 3][m[K[m[K’
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:168:39:[m[K   required from ‘[01m[Kvoid esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::[01;32m[Kpredict[m[K(double&, processnoisecovariance&, const input&, bool, bool) [35m[K[with state = state_output; int process_noise_dof = 30; input = input_ikfom; measurement = state_output; int measurement_noise_dof = 0; processnoisecovariance = Eigen::Matrix<double, 30, 30, 0, 30, 30>][m[K[m[K’
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:1004:46:[m[K   required from here
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+  143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+      |                           [01;36m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+                 from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+                 from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4[m[K,
+                 from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.cpp:2[m[K:
+/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::[01;32m[Kcos_sinc_sqrt[m[K(const scalar&) [35m[K[with scalar = double][m[K[m[K’:
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::[01;32m[Kexp[m[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) [35m[K[with scalar = double; int n = 3][m[K[m[K’
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:334:32:[m[K   required from ‘[01m[Kstatic MTK::SO3<_scalar, Options> MTK::SO3<_scalar, Options>::[01;32m[Kexp[m[K(const Eigen::Matrix<Type, 3, 1>&, scalar) [35m[K[with _scalar = double; int Options = 0; scalar = double][m[K[m[K’
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:242:18:[m[K   required from ‘[01m[Kvoid MTK::SO3<_scalar, Options>::[01;32m[Kboxplus[m[K(MTK::vectview<const _scalar, MTK::SO3<_scalar, Options>::DOF>, scalar) [35m[K[with _scalar = double; int Options = 0; scalar = double][m[K[m[K’
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:38:1:[m[K   required from here
+[01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+  143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+      |                           [01;36m[K^~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[100%] Built target pointlio_mapping
+-- Install configuration: ""
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/lib/point_lio/pointlio_mapping
+-- Set non-toolchain portion of runtime path of "/home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/mid360.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/horizon.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/velody16.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/avia.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/config/ouster64.yaml
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/rviz_cfg
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/path.sh
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/environment/path.dsv
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.bash
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.sh
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.zsh
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/local_setup.dsv
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/package.dsv
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/ament_index/resource_index/packages/point_lio
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+-- Installing: /home/jjb/ros2_ws/src/point_lio_ros2/install/point_lio/share/point_lio/package.xml
