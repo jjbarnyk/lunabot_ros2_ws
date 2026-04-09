@@ -1,1 +1,0 @@
-/home/jjb/ros2_ws/src/point_lio_ros2/launch/slam.launch.py

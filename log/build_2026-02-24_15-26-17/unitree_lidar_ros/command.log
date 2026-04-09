@@ -1,2 +1,0 @@
-Invoking command in '/home/jjb/ros2_ws/build/unitree_lidar_ros': /usr/bin/cmake /home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros/src/unitree_lidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/unitree_lidar_ros
-Invoked command in '/home/jjb/ros2_ws/build/unitree_lidar_ros' returned '1': /usr/bin/cmake /home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros/src/unitree_lidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/unitree_lidar_ros

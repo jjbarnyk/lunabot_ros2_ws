@@ -1,1 +1,0 @@
-/home/jjb/ros2_ws/build/point_lio/ament_cmake_core/point_lioConfig-version.cmake
