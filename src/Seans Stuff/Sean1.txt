@@ -1,0 +1,822 @@
+Can try to intergrade with current app.js 
+src/dashboard/app.js
+
+he said I can pull the code onto my local machine, exclude the build and install. Then work on it there. No saved scan but can used demo scans. 
+
+Use markdown formatting
+
+Next order of business: 
+
+Lunabot server guide: 
+
+Start Up (2 ubuntu servers): Start ROS bridge:
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+Start dashboard:
+cd /mnt/c/Users/cards/ros2_dashboard
+python3 -m http.server 8080
+
+
+
+
+fake odom
+source /opt/ros/jazzy/setup.bash
+cd ~/odom_test
+python3 fake_odom.py
+
+New Fake Odom: 
+source /opt/ros/jazzy/setup.bash
+python3 fake_odom.py
+
+
+Fake Scan: 
+source /opt/ros/jazzy/setup.bash
+python3 fake_scan.py
+
+
+start web_video_server on port 8081
+Run:
+source /opt/ros/jazzy/setup.bash
+ros2 run web_video_server web_video_server --ros-args -p port:=8081
+
+
+How to Open app.js
+
+In Ubuntu, run:
+
+cd /mnt/c/Users/cards/ros2_dashboard
+nano app.js
+
+
+Open RViz:
+
+source /opt/ros/jazzy/setup.bash
+ros2 run rviz2 rviz2
+
+
+
+CTR + X Saves
+
+CRT + C Stops program
+
+
+refresh the browser
+
+Do a hard refresh:
+
+Ctrl + Shift + R
+
+
+Lunabot ROS2 Quick Start Guide
+🚀 Start Everything (4 terminals)
+🔹 Terminal 1 — ROS Bridge
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+🔹 Terminal 2 — Fake Odometry
+source /opt/ros/jazzy/setup.bash
+cd ~/odom_test
+python3 fake_odom.py
+🔹 Terminal 3 — Fake Scan (LiDAR)
+source /opt/ros/jazzy/setup.bash
+cd ~/scan_test
+python3 fake_scan.py
+🔹 Terminal 4 — Dashboard Server
+cd /mnt/c/Users/cards/ros2_dashboard
+python3 -m http.server 8080
+🌐 Open Dashboard
+
+In browser:
+
+http://localhost:8080
+
+Then:
+
+Ctrl + Shift + R  (hard refresh)
+🧠 RViz (Visualization)
+Open RViz:
+source /opt/ros/jazzy/setup.bash
+ros2 run rviz2 rviz2
+RViz Setup (IMPORTANT)
+
+Set:
+
+Fixed Frame → odom
+
+Add:
+
+✅ TF
+✅ LaserScan → /scan
+✅ Odometry → /odom
+🧪 Debug Commands (VERY IMPORTANT)
+
+Check topics:
+ros2 topic list -t
+
+Check odometry:
+ros2 topic echo /odom
+
+Check scan:
+ros2 topic echo /scan
+
+Check transforms:
+ros2 topic echo /tf
+
+🔧 TF Setup (Required for SLAM later)
+Terminal (separate):
+source /opt/ros/jazzy/setup.bash
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 base_link base_scan
+
+📝 Editing Files
+Open dashboard JS:
+cd /mnt/c/Users/cards/ros2_dashboard
+nano app.js
+Save + Exit nano:
+Ctrl + X → Y → Enter
+
+⛔ Stopping Programs
+Ctrl + C
+
+🔁 Common Issues
+❌ Port already in use (9090)
+pkill -f rosbridge
+❌ Nothing showing in RViz
+Wrong topic selected
+Wrong fixed frame
+Camera not focused (press F)
+❌ Dashboard not updating
+Forgot hard refresh
+rosbridge not running
+JS error in console (F12)
+🔥 (NEW) SLAM Quick Start (Next Step)
+
+When ready:
+
+sudo apt install ros-jazzy-slam-toolbox
+
+Run:
+
+source /opt/ros/jazzy/setup.bash
+ros2 launch slam_toolbox online_async_launch.py
+
+In RViz:
+
+Fixed Frame → map
+Add → Map → /map
+🧠 Big Picture (KEEP THIS)
+/scan → what robot sees
+/odom → where robot is
+TF → how everything connects
+SLAM → builds the map
+Nav2 → drives robot automatically
+Your code → mission (dig, dump, etc.)
+
+
+
+
+
+Then do this
+
+Make sure these are all running:
+
+Terminal 1:
+
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+Terminal 2:
+
+source /opt/ros/jazzy/setup.bash
+cd ~/odom_test
+python3 fake_odom.py
+
+Terminal 3:
+
+source /opt/ros/jazzy/setup.bash
+cd ~/scan_test
+python3 fake_scan.py
+
+Terminal 4:
+
+cd /mnt/c/Users/cards/ros2_dashboard
+python3 -m http.server 8080
+
+Then in the browser do a hard refresh:
+
+Ctrl + Shift + R
+
+
+
+Lunabot server guide: 
+
+Start Up (2 ubuntu servers): Start ROS bridge:
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+Start dashboard:
+cd /mnt/c/Users/cards/ros2_dashboard
+python3 -m http.server 8080
+
+
+
+
+fake odom
+source /opt/ros/jazzy/setup.bash
+cd ~/odom_test
+python3 fake_odom.py
+
+New Fake Odom: 
+source /opt/ros/jazzy/setup.bash
+python3 fake_odom.py
+
+
+Fake Scan: 
+source /opt/ros/jazzy/setup.bash
+python3 fake_scan.py
+
+
+How to Open app.js
+
+In Ubuntu, run:
+
+cd /mnt/c/Users/cards/ros2_dashboard
+nano app.js
+
+
+Open RViz:
+
+source /opt/ros/jazzy/setup.bash
+ros2 run rviz2 rviz2
+
+
+
+CTR + X Saves
+
+CRT + C Stops program
+
+
+refresh the browser
+
+Do a hard refresh:
+
+Ctrl + Shift + R
+
+
+
+
+
+Then do this
+
+Make sure these are all running:
+
+Terminal 1:
+
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+Terminal 2:
+
+source /opt/ros/jazzy/setup.bash
+cd ~/odom_test
+python3 fake_odom.py
+
+Terminal 3:
+
+source /opt/ros/jazzy/setup.bash
+cd ~/scan_test
+python3 fake_scan.py
+
+Terminal 4:
+
+cd /mnt/c/Users/cards/ros2_dashboard
+python3 -m http.server 8080
+
+Then in the browser do a hard refresh:
+
+Ctrl + Shift + R
+
+
+
+Beginner guide for teammate: ROS 2 web dashboard and autonomy foundation
+What this project is
+
+We are building the foundation for a Lunabot control and monitoring system.
+
+The goal is to let a normal web browser talk to the robot’s ROS 2 system in real time.
+
+That means:
+
+the browser can read robot data
+the browser can send robot commands
+the browser can call ROS services
+later, the browser can become our autonomy dashboard
+
+This is useful because it gives us one place to monitor and control the robot during development and testing.
+
+The big picture
+
+Think of the system like this:
+
+Browser dashboard
+      ↓
+JavaScript (roslibjs)
+      ↓
+WebSocket connection
+      ↓
+rosbridge_server
+      ↓
+ROS 2 graph
+      ↓
+Robot topics, services, and nodes
+What each part means
+
+Browser dashboard
+This is the webpage we open in Chrome or Edge. It is our user interface.
+
+JavaScript / roslibjs
+This is the code in the webpage that knows how to talk to ROS.
+
+WebSocket connection
+This is the live communication line between the browser and ROS.
+
+rosbridge_server
+This is the translator. Browsers do not understand native ROS communication, so rosbridge_server converts ROS messages into a format the browser can use.
+
+ROS 2 graph
+This is the network of ROS topics, services, and nodes running on the robot or laptop.
+
+What we have already built
+
+So far, the system already does these things:
+
+1. Browser connects to ROS 2
+
+We used rosbridge_server and roslibjs to make a webpage connect to ROS through port 9090.
+
+2. Dashboard runs locally
+
+We serve the dashboard using a simple Python web server on port 8080.
+
+That means:
+
+webpage is at http://localhost:8080
+ROS bridge is at ws://localhost:9090
+3. Subscribe to topics
+
+We already proved the browser can listen to ROS topics.
+
+Examples:
+
+/rosout
+/odom
+4. Publish to topics
+
+We already proved the browser can publish to:
+
+/cmd_vel
+
+using buttons like Forward, Back, Left, Right, Stop.
+
+5. Call services
+
+We already proved the browser can call a ROS service:
+
+/rosapi/topics
+
+to ask ROS which topics are active.
+
+6. Display odometry live
+
+We built a fake odometry publisher and connected it to the dashboard, so the dashboard now shows live X and Y position.
+
+Why this matters for autonomy
+
+This work does not make the robot autonomous by itself.
+
+What it does is create the interface layer for autonomy.
+
+Autonomy needs these pieces:
+
+sensor data
+robot position
+mapping
+planning
+control
+state monitoring
+operator supervision
+
+The dashboard we built becomes the place where we can:
+
+see what the robot thinks
+see sensor data
+send commands
+start and stop autonomy
+debug failures in real time
+
+Without a dashboard, autonomy is mostly invisible.
+With a dashboard, we can understand what the robot is doing.
+
+Part 1: environment setup
+Important concept: Windows vs Ubuntu
+
+This project is being developed on a Windows laptop, but ROS 2 is running inside Ubuntu through WSL.
+
+That means there are two environments:
+
+Windows / PowerShell
+
+Looks like this:
+
+PS C:\Users\cards>
+
+This is not where we run ROS commands.
+
+Ubuntu / WSL
+
+Looks like this:
+
+sean@LAPTOP-xxxx:~$
+
+This is where we run ROS commands.
+
+If a command uses things like:
+
+source
+/mnt/c/...
+ros2
+python3
+
+it should probably be run in Ubuntu, not PowerShell.
+
+Opening Ubuntu
+Click Start
+Search for Ubuntu
+Open it
+
+You should see a prompt like:
+
+sean@LAPTOP-xxxx:~$
+Part 2: start the working system
+
+We usually need three terminals open.
+
+Terminal 1: ROS bridge
+source /opt/ros/jazzy/setup.bash
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+
+Expected result:
+
+Rosbridge WebSocket server started on port 9090
+
+This terminal must stay running.
+
+Terminal 2: fake odom publisher
+source /opt/ros/jazzy/setup.bash
+cd ~/odom_test
+python3 fake_odom.py
+
+This terminal also stays running.
+
+Terminal 3: dashboard web server
+cd /mnt/c/Users/cards/ros2_dashboard
+python3 -m http.server 8080
+
+This serves the webpage.
+
+Open the dashboard
+
+In a browser, go to:
+
+http://localhost:8080
+
+You should see the dashboard page.
+
+Part 3: understanding the current dashboard
+
+The current dashboard has several parts.
+
+Connection status
+
+This shows whether the browser is connected to ROS.
+
+Examples:
+
+Connecting...
+Connected to ROS2
+Disconnected
+Position
+
+This shows X and Y from /odom.
+
+If fake odom is running, X should keep increasing.
+
+Teleop controls
+
+Buttons publish velocity commands to /cmd_vel:
+
+Forward
+Back
+Left
+Right
+Stop
+ROS info
+
+The “List Topics” button calls a ROS service and prints all active topics.
+
+Part 4: files in the dashboard
+
+The dashboard folder is here:
+
+/mnt/c/Users/cards/ros2_dashboard
+
+Inside it are:
+
+index.html
+app.js
+index.html
+
+This defines the page layout and buttons.
+
+app.js
+
+This defines the ROS logic:
+
+connecting to rosbridge
+subscribing to topics
+publishing to topics
+calling services
+Part 5: understanding the fake odometry node
+
+The file is:
+
+~/odom_test/fake_odom.py
+
+It publishes a fake Odometry message to /odom.
+
+Why we made this:
+
+the real robot is not built yet
+we still want to build the autonomy pipeline now
+fake odom lets us test everything else
+
+This is a very important strategy:
+
+Build the software pipeline first
+Swap fake data for real data later
+
+That is exactly what strong robotics teams do.
+
+Part 6: what teammate should learn first
+
+The teammate should get comfortable with four basic ideas.
+
+1. Topics
+
+Topics are streams of data.
+
+Examples:
+
+/odom
+/cmd_vel
+/scan
+
+A topic is like a radio station:
+
+one node publishes
+another node listens
+2. Services
+
+Services are request/response.
+
+Example:
+
+ask ROS for all active topics
+
+A service is like asking a question and waiting for one answer.
+
+3. Nodes
+
+Nodes are programs inside ROS.
+
+Example:
+
+fake odom publisher
+rosbridge server
+future encoder node
+future LiDAR node
+4. Messages
+
+Messages are the data types passed around in topics and services.
+
+Examples:
+
+nav_msgs/msg/Odometry
+geometry_msgs/msg/Twist
+sensor_msgs/msg/LaserScan
+Part 7: useful beginner commands
+
+These are some commands your partner should practice until they feel normal.
+
+Check ROS topics
+source /opt/ros/jazzy/setup.bash
+ros2 topic list
+Check topic types
+source /opt/ros/jazzy/setup.bash
+ros2 topic list -t
+Read a topic
+source /opt/ros/jazzy/setup.bash
+ros2 topic echo /odom
+Read /cmd_vel with explicit type
+source /opt/ros/jazzy/setup.bash
+ros2 topic echo /cmd_vel geometry_msgs/msg/Twist
+Open dashboard folder
+cd /mnt/c/Users/cards/ros2_dashboard
+Edit a file
+nano app.js
+
+or
+
+nano index.html
+Save in nano
+Ctrl + X
+Y
+Enter
+Part 8: what partner should understand about ports
+
+This is very important.
+
+Port 8080
+
+This is the webpage server.
+
+You type this into the browser:
+
+http://localhost:8080
+Port 9090
+
+This is rosbridge.
+
+The browser does not open this directly.
+Instead, the JavaScript inside the webpage connects to it using:
+
+ws://localhost:9090
+
+So:
+
+browser loads page from 8080
+webpage JS talks to ROS through 9090
+Part 9: what is the next work for teammate
+
+There are really two major tracks now.
+
+Track A: software / UI / integration
+
+This is the work you’ve been doing.
+
+Examples:
+
+dashboard
+topic visualization
+service calls
+state display
+debugging tools
+Track B: robot-side autonomy pipeline
+
+This is what your teammate can start learning and building.
+
+Examples:
+
+real encoder odometry
+real LiDAR publishing
+TF tree
+SLAM
+Nav2
+
+If your teammate is novice, the best way to ramp him up is:
+
+Step 1
+
+Learn how to start the current system and confirm it works.
+
+Step 2
+
+Learn how to inspect topics:
+
+/odom
+/cmd_vel
+/scan once added
+Step 3
+
+Understand fake odom and why it exists.
+
+Step 4
+
+Start preparing for the real robot:
+
+encoder odometry design
+wheel geometry
+IMU integration
+Part 10: the real autonomy roadmap
+
+This is the long-term plan.
+
+Phase 1: topic plumbing
+
+Make sure all important topics exist:
+
+/cmd_vel
+/odom
+/scan
+Phase 2: localization inputs
+
+Use encoders and IMU to get real odometry.
+
+Phase 3: mapping
+
+Use /scan + /odom for SLAM.
+
+Phase 4: navigation
+
+Use Nav2 to send goal locations.
+
+Phase 5: mission logic
+
+Build a higher-level state machine:
+
+drive to dig zone
+dig
+drive to dump zone
+dump
+repeat
+Phase 6: supervision UI
+
+Use the dashboard to monitor and control autonomy.
+
+Part 11: teammate first assignment
+
+Here’s the exact beginner assignment I would give your partner.
+
+Assignment
+
+Learn the current system well enough to:
+
+start rosbridge
+start fake odom
+start the dashboard
+verify /odom in terminal
+verify X/Y updating on the dashboard
+click teleop buttons and verify /cmd_vel
+use List Topics and explain what it does
+
+If he can do those seven things, he understands the current base system.
+
+Part 12: common mistakes
+Mistake 1: using PowerShell instead of Ubuntu
+
+Wrong prompt:
+
+PS C:\Users\cards>
+
+Use Ubuntu instead.
+
+Mistake 2: typing a URL into the terminal
+
+This is wrong:
+
+http://localhost:8080
+
+That goes in the browser, not the terminal.
+
+Mistake 3: opening multiple rosbridge servers
+
+If port 9090 is already in use, another rosbridge is probably still running.
+
+Mistake 4: using Ctrl+Z
+
+This suspends a process instead of stopping it cleanly.
+
+Prefer:
+
+Ctrl + C
+Mistake 5: forgetting to hard refresh
+
+If app.js changes, use:
+
+Ctrl + Shift + R
+Part 13: what he should say if asked what this system does
+
+A good plain-English explanation is:
+
+We built a live web dashboard that can talk to ROS 2 in real time. It can read robot data, send commands like velocity messages, and call ROS services. Right now it uses fake odometry because the real robot is not finished, but the idea is that later we replace the fake data with real sensors and keep the rest of the software pipeline the same.
+
+That’s the core idea.
+
+Part 14: what he should do after reading this
+
+He should first make sure he can personally run the system from scratch.
+
+Then his next technical growth step should be:
+
+learn how real encoder odometry will replace fake odometry
+
+That is the most important robot-side bridge between “working dashboard demo” and “real autonomous robot.”
