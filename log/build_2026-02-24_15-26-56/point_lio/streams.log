@@ -1,0 +1,74 @@
+[0.025s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/point_lio -- -j4 -l4
+[0.166s] [ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[0.168s] [ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[0.169s] [ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[0.179s] [ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[17.356s] [ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[25.468s] In file included from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+[25.469s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+[25.469s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4[m[K,
+[25.469s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:27[m[K:
+[25.469s] /home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::[01;32m[Kcos_sinc_sqrt[m[K(const scalar&) [35m[K[with scalar = double][m[K[m[K’:
+[25.469s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::[01;32m[Kexp[m[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) [35m[K[with scalar = double; int n = 3][m[K[m[K’
+[25.469s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:168:39:[m[K   required from ‘[01m[Kvoid esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::[01;32m[Kpredict[m[K(double&, processnoisecovariance&, const input&, bool, bool) [35m[K[with state = state_output; int process_noise_dof = 30; input = input_ikfom; measurement = state_output; int measurement_noise_dof = 0; processnoisecovariance = Eigen::Matrix<double, 30, 30, 0, 30, 30>][m[K[m[K’
+[25.470s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:1004:46:[m[K   required from here
+[25.470s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[25.470s]   143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+[25.470s]       |                           [01;36m[K^~~~~~~~~~~~~[m[K
+[34.275s] In file included from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+[34.275s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+[34.276s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4[m[K,
+[34.276s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.cpp:2[m[K:
+[34.276s] /home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::[01;32m[Kcos_sinc_sqrt[m[K(const scalar&) [35m[K[with scalar = double][m[K[m[K’:
+[34.276s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::[01;32m[Kexp[m[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) [35m[K[with scalar = double; int n = 3][m[K[m[K’
+[34.276s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:334:32:[m[K   required from ‘[01m[Kstatic MTK::SO3<_scalar, Options> MTK::SO3<_scalar, Options>::[01;32m[Kexp[m[K(const Eigen::Matrix<Type, 3, 1>&, scalar) [35m[K[with _scalar = double; int Options = 0; scalar = double][m[K[m[K’
+[34.276s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:242:18:[m[K   required from ‘[01m[Kvoid MTK::SO3<_scalar, Options>::[01;32m[Kboxplus[m[K(MTK::vectview<const _scalar, MTK::SO3<_scalar, Options>::DOF>, scalar) [35m[K[with _scalar = double; int Options = 0; scalar = double][m[K[m[K’
+[34.276s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:38:1:[m[K   required from here
+[34.276s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[34.276s]   143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+[34.276s]       |                           [01;36m[K^~~~~~~~~~~~~[m[K
+[81.834s] [100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[85.803s] [100%] Built target pointlio_mapping
+[85.832s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/point_lio -- -j4 -l4
+[85.835s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/point_lio
+[85.856s] -- Install configuration: ""
+[85.856s] -- Installing: /home/jjb/ros2_ws/install/point_lio/lib/point_lio/pointlio_mapping
+[85.862s] -- Set non-toolchain portion of runtime path of "/home/jjb/ros2_ws/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+[85.862s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config
+[85.862s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/mid360.yaml
+[85.862s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/horizon.yaml
+[85.862s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[85.862s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/velody16.yaml
+[85.862s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/avia.yaml
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/ouster64.yaml
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[85.863s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[85.864s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/rviz_cfg
+[85.865s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[85.865s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[85.865s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[85.866s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[85.866s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[85.867s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.sh
+[85.867s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.dsv
+[85.867s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.bash
+[85.868s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.sh
+[85.868s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.zsh
+[85.868s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.dsv
+[85.869s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.dsv
+[85.869s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[85.869s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[85.870s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[85.870s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[85.870s] -- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.xml
+[85.874s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/point_lio

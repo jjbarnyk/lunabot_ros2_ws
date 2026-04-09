@@ -1,0 +1,103 @@
+[0.020s] Invoking command in '/home/jjb/ros2_ws/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros2/src/unitree_lidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/unitree_lidar_ros2
+[0.223s] -- The C compiler identification is GNU 13.3.0
+[0.396s] -- The CXX compiler identification is GNU 13.3.0
+[0.428s] -- Detecting C compiler ABI info
+[0.683s] -- Detecting C compiler ABI info - done
+[0.701s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.703s] -- Detecting C compile features
+[0.703s] -- Detecting C compile features - done
+[0.720s] -- Detecting CXX compiler ABI info
+[0.985s] -- Detecting CXX compiler ABI info - done
+[1.005s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.006s] -- Detecting CXX compile features
+[1.007s] -- Detecting CXX compile features - done
+[1.011s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.616s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.142s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.276s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.332s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.481s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.698s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.712s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.058s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.135s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.254s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.444s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.473s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[3.552s] -- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[3.673s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[3.673s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[3.674s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[3.674s]   cmake_policy command to set the policy and suppress this warning.
+[3.674s] 
+[3.674s]   CMake variable FLANN_ROOT is set to:
+[3.674s] 
+[3.674s]     /usr
+[3.674s] 
+[3.674s]   For compatibility, find_package is ignoring the variable, but code in a
+[3.675s]   .cmake module might still use it.
+[3.675s] Call Stack (most recent call first):
+[3.675s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[3.675s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[3.675s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[3.675s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.675s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[3.675s]   CMakeLists.txt:22 (find_package)
+[3.676s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.676s] [0m
+[3.676s] -- Found flann version 1.9.2
+[4.304s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[4.304s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[6.761s] -- Checking for module 'libusb-1.0'
+[6.790s] --   Found libusb-1.0, version 1.0.27
+[6.863s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[6.865s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.974s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.977s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[6.991s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[7.008s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[7.638s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.649s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[8.261s] -- Found Qhull version 8.0.2
+[8.860s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[9.423s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[9.424s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[9.426s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[9.427s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[9.428s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[9.429s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[9.429s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[9.430s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[9.431s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[9.432s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[9.433s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[9.435s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[9.436s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[9.437s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[9.438s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[9.440s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[9.441s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[9.442s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[9.444s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[9.445s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[9.446s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[9.447s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[9.447s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[9.448s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[9.450s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[9.453s] [33mCMake Warning (dev) at CMakeLists.txt:23 (find_package):
+[9.453s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[9.453s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[9.453s]   command to set the policy and suppress this warning.
+[9.453s] 
+[9.453s]   CMake variable PCL_ROOT is set to:
+[9.453s] 
+[9.453s]     /usr
+[9.453s] 
+[9.453s]   For compatibility, CMake is ignoring the variable.
+[9.454s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[9.454s] [0m
+[9.637s] -- Configuring done (9.6s)
+[9.719s] -- Generating done (0.1s)
+[9.729s] -- Build files have been written to: /home/jjb/ros2_ws/build/unitree_lidar_ros2

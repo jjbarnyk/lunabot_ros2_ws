@@ -1,0 +1,4 @@
+Invoking command in '/home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor -- -j4 -l4
+Invoked command in '/home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor -- -j4 -l4
+Invoking command in '/home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor
+Invoked command in '/home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/examples_rclcpp_cbg_executor

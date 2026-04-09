@@ -1,0 +1,107 @@
+[0.430s] Invoking command in '/home/jjb/ros2_ws/src/examples/launch_testing/launch_testing_examples': AMENT_PREFIX_PATH=/home/jjb/ros2_ws/install/launch_testing_examples:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjb/ros2_ws/build/launch_testing_examples/pytest.xml --junit-prefix=launch_testing_examples -o cache_dir=/home/jjb/ros2_ws/build/launch_testing_examples/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjb/ros2_ws/build/launch_testing_examples:/home/jjb/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.977s] [1m============================= test session starts ==============================[0m
+[0.977s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[0.983s] cachedir: /home/jjb/ros2_ws/build/launch_testing_examples/.pytest_cache
+[0.983s] rootdir: /home/jjb/ros2_ws/src/examples/launch_testing/launch_testing_examples
+[0.983s] plugins: launch-testing-ros-0.26.11, ament-xmllint-0.17.4, ament-pep257-0.17.4, ament-lint-0.17.4, ament-flake8-0.17.4, ament-copyright-0.17.4, launch-testing-3.4.10, colcon-core-0.20.1, cov-4.1.0
+[1.633s] [1mcollecting ... [0m[1m
+[1.637s] collecting 1 item                                                              [0m[1m
+[1.638s] collected 9 items                                                              [0m
+[1.638s] 
+[1.693s] launch_testing_examples/check_msgs_launch_test.py [31mF[0m[31m                      [ 11%][0m
+[1.700s] launch_testing_examples/check_multiple_nodes_launch_test.py [31mF[0m[31m            [ 22%][0m
+[6.713s] launch_testing_examples/check_node_launch_test.py [31mF[0m[31m                      [ 33%][0m
+[6.722s] launch_testing_examples/hello_world_launch_test.py [32m.[0m[31m                     [ 44%][0m
+[6.728s] launch_testing_examples/record_rosbag_launch_test.py [31mF[0m[31m                   [ 55%][0m
+[6.734s] launch_testing_examples/set_param_launch_test.py [31mF[0m[31m                       [ 66%][0m
+[7.109s] test/test_copyright.py [32m.[0m[31m                                                 [ 77%][0m
+[7.286s] test/test_flake8.py [32m.[0m[31m                                                    [ 88%][0m
+[7.326s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[7.327s] 
+[7.327s] =================================== FAILURES ===================================
+[7.327s] [31m[1m_________ launch tests: launch_testing_examples.check_msgs_launch_test _________[0m
+[7.327s] 
+[7.327s] ===========================================================
+[7.327s] FAIL: launch_testing_examples.check_msgs_launch_test.TestFixture.test_check_if_msgs_published
+[7.327s] -----------------------------------------------------------
+[7.327s] Exception: Launch stopped before the active tests finished.
+[7.327s] ----------------------------- Captured stdout call -----------------------------
+[7.328s] [INFO] [launch]: All log files can be found below /home/jjb/.ros/log/2026-02-25-12-12-13-869802-lunabot-8345
+[7.328s] [INFO] [launch]: Default logging verbosity is set to INFO
+[7.328s] [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'demo_nodes_cpp' not found, searching: ['/home/jjb/ros2_ws/install/launch_testing_examples', '/home/jjb/ros2_ws/install/unitree_lidar_ros2', '/home/jjb/ros2_ws/install/point_lio', '/home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros2/install/unitree_lidar_ros2', '/opt/ros/jazzy']"
+[7.328s] Processes under test stopped before tests completed
+[7.328s] [31m[1m____ launch tests: launch_testing_examples.check_multiple_nodes_launch_test ____[0m
+[7.328s] 
+[7.328s] ===========================================================
+[7.328s] FAIL: launch_testing_examples.check_multiple_nodes_launch_test.CheckMultipleNodesLaunched.test_node_does_not_exist
+[7.328s] -----------------------------------------------------------
+[7.328s] Exception: Launch stopped before the active tests finished.
+[7.328s] 
+[7.329s] 
+[7.329s] ===========================================================
+[7.329s] FAIL: launch_testing_examples.check_multiple_nodes_launch_test.CheckMultipleNodesLaunched.test_nodes_successful
+[7.329s] -----------------------------------------------------------
+[7.329s] Exception: Launch stopped before the active tests finished.
+[7.329s] ----------------------------- Captured stdout call -----------------------------
+[7.329s] [INFO] [launch]: All log files can be found below /home/jjb/.ros/log/2026-02-25-12-12-13-869802-lunabot-8345
+[7.329s] [INFO] [launch]: Default logging verbosity is set to INFO
+[7.329s] [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'demo_nodes_cpp' not found, searching: ['/home/jjb/ros2_ws/install/launch_testing_examples', '/home/jjb/ros2_ws/install/unitree_lidar_ros2', '/home/jjb/ros2_ws/install/point_lio', '/home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros2/install/unitree_lidar_ros2', '/opt/ros/jazzy']"
+[7.329s] Processes under test stopped before tests completed
+[7.329s] [31m[1m_________ launch tests: launch_testing_examples.check_node_launch_test _________[0m
+[7.329s] 
+[7.330s] ===========================================================
+[7.330s] FAIL: launch_testing_examples.check_node_launch_test.TestFixture.test_node_start
+[7.330s] -----------------------------------------------------------
+[7.330s] Exception: Launch stopped before the active tests finished.
+[7.330s] ----------------------------- Captured stdout call -----------------------------
+[7.330s] [INFO] [launch]: All log files can be found below /home/jjb/.ros/log/2026-02-25-12-12-13-869802-lunabot-8345
+[7.330s] [INFO] [launch]: Default logging verbosity is set to INFO
+[7.330s] [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'demo_nodes_cpp' not found, searching: ['/home/jjb/ros2_ws/install/launch_testing_examples', '/home/jjb/ros2_ws/install/unitree_lidar_ros2', '/home/jjb/ros2_ws/install/point_lio', '/home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros2/install/unitree_lidar_ros2', '/opt/ros/jazzy']"
+[7.330s] Processes under test stopped before tests completed
+[7.330s] ----------------------------- Captured stderr call -----------------------------
+[7.330s] test_node_start (launch_testing_examples.check_node_launch_test.TestFixture.test_node_start) ... 
+[7.330s] [31m[1m_______ launch tests: launch_testing_examples.record_rosbag_launch_test ________[0m
+[7.330s] 
+[7.330s] ===========================================================
+[7.331s] FAIL: launch_testing_examples.record_rosbag_launch_test.DelayShutdown.test_delay
+[7.331s] -----------------------------------------------------------
+[7.331s] Exception: Launch stopped before the active tests finished.
+[7.331s] 
+[7.331s] 
+[7.331s] ===========================================================
+[7.331s] FAIL: launch_testing_examples.record_rosbag_launch_test.TestFixtureAfterShutdown.test_rosbag_record
+[7.331s] -----------------------------------------------------------
+[7.331s] Exception: Launch stopped before the active tests finished.
+[7.331s] ----------------------------- Captured stdout call -----------------------------
+[7.331s] [INFO] [launch]: All log files can be found below /home/jjb/.ros/log/2026-02-25-12-12-13-869802-lunabot-8345
+[7.331s] [INFO] [launch]: Default logging verbosity is set to INFO
+[7.331s] [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'demo_nodes_cpp' not found, searching: ['/home/jjb/ros2_ws/install/launch_testing_examples', '/home/jjb/ros2_ws/install/unitree_lidar_ros2', '/home/jjb/ros2_ws/install/point_lio', '/home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros2/install/unitree_lidar_ros2', '/opt/ros/jazzy']"
+[7.332s] Processes under test stopped before tests completed
+[7.332s] [31m[1m_________ launch tests: launch_testing_examples.set_param_launch_test __________[0m
+[7.332s] 
+[7.332s] ===========================================================
+[7.332s] FAIL: launch_testing_examples.set_param_launch_test.TestFixture.test_set_parameter
+[7.332s] -----------------------------------------------------------
+[7.332s] Exception: Launch stopped before the active tests finished.
+[7.332s] ----------------------------- Captured stdout call -----------------------------
+[7.332s] [INFO] [launch]: All log files can be found below /home/jjb/.ros/log/2026-02-25-12-12-13-869802-lunabot-8345
+[7.332s] [INFO] [launch]: Default logging verbosity is set to INFO
+[7.332s] [ERROR] [launch]: Caught exception in launch (see debug for traceback): "package 'demo_nodes_cpp' not found, searching: ['/home/jjb/ros2_ws/install/launch_testing_examples', '/home/jjb/ros2_ws/install/unitree_lidar_ros2', '/home/jjb/ros2_ws/install/point_lio', '/home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros2/install/unitree_lidar_ros2', '/opt/ros/jazzy']"
+[7.332s] Processes under test stopped before tests completed
+[7.332s] - generated xml file: /home/jjb/ros2_ws/build/launch_testing_examples/pytest.xml -
+[7.333s] [33m=============================== warnings summary ===============================[0m
+[7.333s] test/test_flake8.py::test_flake8
+[7.333s] test/test_flake8.py::test_flake8
+[7.333s] test/test_flake8.py::test_flake8
+[7.333s] test/test_flake8.py::test_flake8
+[7.333s]   Warning: This process (pid=8345) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[7.333s] 
+[7.333s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[7.333s] [36m[1m=========================== short test summary info ============================[0m
+[7.333s] [31mFAILED[0m launch_testing_examples/check_msgs_launch_test.py::[1mlaunch_testing_examples.check_msgs_launch_test[0m - launch_testing_examples.check_msgs_launch_test.TestFixture.test_check_if_ms...
+[7.333s] [31mFAILED[0m launch_testing_examples/check_multiple_nodes_launch_test.py::[1mlaunch_testing_examples.check_multiple_nodes_launch_test[0m - launch_testing_examples.check_multiple_nodes_launch_test.CheckMultipleNodes...
+[7.333s] [31mFAILED[0m launch_testing_examples/check_node_launch_test.py::[1mlaunch_testing_examples.check_node_launch_test[0m - launch_testing_examples.check_node_launch_test.TestFixture.test_node_start ...
+[7.333s] [31mFAILED[0m launch_testing_examples/record_rosbag_launch_test.py::[1mlaunch_testing_examples.record_rosbag_launch_test[0m - launch_testing_examples.record_rosbag_launch_test.DelayShutdown.test_delay ...
+[7.334s] [31mFAILED[0m launch_testing_examples/set_param_launch_test.py::[1mlaunch_testing_examples.set_param_launch_test[0m - launch_testing_examples.set_param_launch_test.TestFixture.test_set_paramete...
+[7.334s] [31m=================== [31m[1m5 failed[0m, [32m4 passed[0m, [33m4 warnings[0m[31m in 6.35s[0m[31m ====================[0m
+[7.713s] Invoked command in '/home/jjb/ros2_ws/src/examples/launch_testing/launch_testing_examples' returned '1': AMENT_PREFIX_PATH=/home/jjb/ros2_ws/install/launch_testing_examples:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjb/ros2_ws/build/launch_testing_examples/pytest.xml --junit-prefix=launch_testing_examples -o cache_dir=/home/jjb/ros2_ws/build/launch_testing_examples/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjb/ros2_ws/build/launch_testing_examples:/home/jjb/ros2_ws/install/launch_testing_examples/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

@@ -1,0 +1,117 @@
+[0.039s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjb/ros2_ws/install/launch_testing_examples:/home/jjb/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_service:/home/jjb/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_client:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jjb/ros2_ws/install/examples_rclpy_guard_conditions:/home/jjb/ros2_ws/install/examples_rclpy_executors:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/point_lio
+[0.205s] -- Current CPU architecture: aarch64
+[0.206s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.621s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.661s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.736s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.757s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.794s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.826s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.970s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.976s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.112s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.267s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.269s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.338s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.389s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.437s] -- Found pcl_ros: 2.6.2 (/opt/ros/jazzy/share/pcl_ros/cmake)
+[1.580s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.580s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.580s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.580s]   cmake_policy command to set the policy and suppress this warning.
+[1.580s] 
+[1.580s]   CMake variable FLANN_ROOT is set to:
+[1.580s] 
+[1.580s]     /usr
+[1.580s] 
+[1.581s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.581s]   .cmake module might still use it.
+[1.581s] Call Stack (most recent call first):
+[1.581s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.581s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.581s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.581s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.581s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.581s]   /opt/ros/jazzy/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.581s]   /opt/ros/jazzy/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[1.581s]   CMakeLists.txt:45 (find_package)
+[1.581s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.582s] [0m
+[1.585s] -- Found flann version 1.9.2
+[2.977s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.989s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.995s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[3.708s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.719s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.379s] -- Found Qhull version 8.0.2
+[5.156s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.114s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[6.117s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.129s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[6.187s] [33mCMake Warning (dev) at CMakeLists.txt:61 (find_package):
+[6.187s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[6.187s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[6.187s]   the cmake_policy command to set the policy and suppress this warning.
+[6.188s] 
+[6.188s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.188s] [0m
+[6.416s] -- Configuring done (6.2s)
+[6.638s] -- Generating done (0.2s)
+[6.659s] -- Build files have been written to: /home/jjb/ros2_ws/build/point_lio
+[6.699s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjb/ros2_ws/install/launch_testing_examples:/home/jjb/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_service:/home/jjb/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_client:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jjb/ros2_ws/install/examples_rclpy_guard_conditions:/home/jjb/ros2_ws/install/examples_rclpy_executors:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/point_lio
+[6.702s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjb/ros2_ws/install/launch_testing_examples:/home/jjb/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_service:/home/jjb/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_client:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jjb/ros2_ws/install/examples_rclpy_guard_conditions:/home/jjb/ros2_ws/install/examples_rclpy_executors:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/point_lio -- -j4 -l4
+[7.093s] [ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[23.705s] In file included from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/SOn.hpp:83[m[K,
+[23.705s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:50[m[K,
+[23.706s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/Estimator.h:4[m[K,
+[23.706s]                  from [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:27[m[K:
+[23.706s] /home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp: In instantiation of ‘[01m[Kstd::pair<_FIter, _FIter> MTK::[01;32m[Kcos_sinc_sqrt[m[K(const scalar&) [35m[K[with scalar = double][m[K[m[K’:
+[23.706s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:252:52:[m[K   required from ‘[01m[Kscalar MTK::[01;32m[Kexp[m[K(vectview<scalar, dim>, vectview<const scalar, dim>, const scalar&) [35m[K[with scalar = double; int n = 3][m[K[m[K’
+[23.706s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/esekfom.hpp:168:39:[m[K   required from ‘[01m[Kvoid esekfom::esekf<state, process_noise_dof, input, measurement, measurement_noise_dof>::[01;32m[Kpredict[m[K(double&, processnoisecovariance&, const input&, bool, bool) [35m[K[with state = state_output; int process_noise_dof = 30; input = input_ikfom; measurement = state_output; int measurement_noise_dof = 0; processnoisecovariance = Eigen::Matrix<double, 30, 30, 0, 30, 30>][m[K[m[K’
+[23.706s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/src/laserMapping.cpp:1004:46:[m[K   required from here
+[23.706s] [01m[K/home/jjb/ros2_ws/src/point_lio_ros2/include/../include/IKFoM/IKFoM_toolkit/esekfom/../mtk/types/../src/mtkmath.hpp:143:27:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[Kstd::pair<double, double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[23.706s]   143 | std::pair<scalar, scalar> [01;36m[Kcos_sinc_sqrt[m[K(const scalar &x2){
+[23.706s]       |                           [01;36m[K^~~~~~~~~~~~~[m[K
+[76.861s] [ 33%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[81.706s] [100%] Built target pointlio_mapping
+[81.731s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjb/ros2_ws/install/launch_testing_examples:/home/jjb/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_service:/home/jjb/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_client:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jjb/ros2_ws/install/examples_rclpy_guard_conditions:/home/jjb/ros2_ws/install/examples_rclpy_executors:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/point_lio -- -j4 -l4
+[81.759s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjb/ros2_ws/install/launch_testing_examples:/home/jjb/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_service:/home/jjb/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_client:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jjb/ros2_ws/install/examples_rclpy_guard_conditions:/home/jjb/ros2_ws/install/examples_rclpy_executors:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/point_lio
+[81.775s] -- Install configuration: ""
+[81.776s] -- Execute custom install script
+[81.776s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/lib/point_lio/pointlio_mapping
+[81.777s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/avia.yaml
+[81.777s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/horizon.yaml
+[81.777s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/mid360.yaml
+[81.777s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/ouster64.yaml
+[81.778s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[81.778s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+[81.778s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/velody16.yaml
+[81.778s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+[81.778s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+[81.778s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+[81.779s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[81.779s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/slam.launch.py
+[81.798s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[81.799s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[81.805s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[81.805s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[81.805s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[81.805s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.sh
+[81.806s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.dsv
+[81.806s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.bash
+[81.806s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.sh
+[81.806s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.zsh
+[81.806s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.dsv
+[81.807s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.dsv
+[81.829s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[81.829s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[81.829s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[81.829s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[81.829s] -- Up-to-date symlink: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.xml
+[81.832s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jjb/ros2_ws/install/launch_testing_examples:/home/jjb/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_service:/home/jjb/ros2_ws/install/examples_rclpy_minimal_publisher:/home/jjb/ros2_ws/install/examples_rclpy_minimal_client:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_server:/home/jjb/ros2_ws/install/examples_rclpy_minimal_action_client:/home/jjb/ros2_ws/install/examples_rclpy_guard_conditions:/home/jjb/ros2_ws/install/examples_rclpy_executors:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/point_lio

@@ -1,0 +1,108 @@
+[0.025s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/point_lio
+[0.229s] -- The C compiler identification is GNU 13.3.0
+[0.394s] -- The CXX compiler identification is GNU 13.3.0
+[0.437s] -- Detecting C compiler ABI info
+[0.698s] -- Detecting C compiler ABI info - done
+[0.713s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.714s] -- Detecting C compile features
+[0.715s] -- Detecting C compile features - done
+[0.733s] -- Detecting CXX compiler ABI info
+[1.001s] -- Detecting CXX compiler ABI info - done
+[1.013s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.013s] -- Detecting CXX compile features
+[1.014s] -- Detecting CXX compile features - done
+[1.015s] -- Current CPU architecture: aarch64
+[1.017s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.562s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.904s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.977s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.011s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.041s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.103s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.403s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.414s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.795s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.869s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.942s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.153s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[3.154s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[3.251s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[3.326s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[3.374s] -- Found pcl_ros: 2.6.2 (/opt/ros/jazzy/share/pcl_ros/cmake)
+[3.522s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[3.522s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[3.522s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[3.522s]   cmake_policy command to set the policy and suppress this warning.
+[3.522s] 
+[3.523s]   CMake variable FLANN_ROOT is set to:
+[3.523s] 
+[3.523s]     /usr
+[3.523s] 
+[3.523s]   For compatibility, find_package is ignoring the variable, but code in a
+[3.523s]   .cmake module might still use it.
+[3.523s] Call Stack (most recent call first):
+[3.523s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[3.526s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[3.526s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[3.526s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.526s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[3.526s]   /opt/ros/jazzy/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[3.527s]   /opt/ros/jazzy/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[3.527s]   CMakeLists.txt:45 (find_package)
+[3.527s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.527s] [0m
+[3.529s] -- Found flann version 1.9.2
+[4.173s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[4.173s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[6.625s] -- Checking for module 'libusb-1.0'
+[6.655s] --   Found libusb-1.0, version 1.0.27
+[6.746s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[6.748s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.868s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.872s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[6.884s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[6.901s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[7.544s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.555s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[8.218s] -- Found Qhull version 8.0.2
+[8.824s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[9.388s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[9.389s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[9.390s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[9.392s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[9.393s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[9.394s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[9.395s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[9.395s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[9.396s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[9.397s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[9.398s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[9.400s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[9.401s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[9.402s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[9.404s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[9.405s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[9.406s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[9.408s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[9.409s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[9.410s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[9.412s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[9.412s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[9.413s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[9.414s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[9.415s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[9.603s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[9.606s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[9.606s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.614s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[9.827s] [33mCMake Warning (dev) at CMakeLists.txt:61 (find_package):
+[9.827s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[9.827s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[9.827s]   the cmake_policy command to set the policy and suppress this warning.
+[9.827s] 
+[9.827s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[9.827s] [0m
+[9.849s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.12.so (found version "3.12.3") 
+[10.036s] -- Configuring done (10.0s)
+[10.129s] -- Generating done (0.1s)
+[10.140s] -- Build files have been written to: /home/jjb/ros2_ws/build/point_lio

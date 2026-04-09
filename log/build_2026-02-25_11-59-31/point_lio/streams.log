@@ -1,0 +1,104 @@
+[0.020s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/point_lio_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/point_lio
+[0.060s] -- Current CPU architecture: aarch64
+[0.060s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.597s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.624s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.669s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.691s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.724s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.752s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.881s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.884s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.018s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.150s] -- Found rclpy: 7.1.9 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.153s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.230s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.299s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.363s] -- Found pcl_ros: 2.6.2 (/opt/ros/jazzy/share/pcl_ros/cmake)
+[1.525s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.525s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.526s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.526s]   cmake_policy command to set the policy and suppress this warning.
+[1.526s] 
+[1.526s]   CMake variable FLANN_ROOT is set to:
+[1.526s] 
+[1.526s]     /usr
+[1.526s] 
+[1.526s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.526s]   .cmake module might still use it.
+[1.526s] Call Stack (most recent call first):
+[1.527s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.527s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.527s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.527s]   /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.527s]   /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.527s]   /opt/ros/jazzy/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.527s]   /opt/ros/jazzy/share/pcl_ros/cmake/pcl_rosConfig.cmake:41 (include)
+[1.529s]   CMakeLists.txt:45 (find_package)
+[1.530s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.530s] [0m
+[1.530s] -- Found flann version 1.9.2
+[2.663s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.685s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.695s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[3.537s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.551s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.314s] -- Found Qhull version 8.0.2
+[5.127s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.201s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[6.206s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.220s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[6.293s] [33mCMake Warning (dev) at CMakeLists.txt:61 (find_package):
+[6.294s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[6.294s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[6.294s]   the cmake_policy command to set the policy and suppress this warning.
+[6.294s] 
+[6.294s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.294s] [0m
+[6.602s] -- Configuring done (6.6s)
+[6.915s] -- Generating done (0.3s)
+[6.953s] -- Build files have been written to: /home/jjb/ros2_ws/build/point_lio
+[7.029s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/point_lio_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/point_lio
+[7.033s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/point_lio -- -j4 -l4
+[7.345s] [ 16%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[15.343s] [100%] Built target pointlio_mapping
+[15.367s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/point_lio -- -j4 -l4
+[15.369s] Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/point_lio
+[15.386s] -- Install configuration: ""
+[15.387s] -- Execute custom install script
+[15.416s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/lib/point_lio/pointlio_mapping
+[15.443s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/avia.yaml
+[15.463s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/horizon.yaml
+[15.483s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/mid360.yaml
+[15.503s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/ouster64.yaml
+[15.523s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+[15.542s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+[15.562s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/velody16.yaml
+[15.589s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+[15.608s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+[15.628s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+[15.647s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+[15.666s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+[15.687s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+[15.707s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+[15.727s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+[15.746s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+[15.767s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+[15.792s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+[15.814s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+[15.838s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+[15.859s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+[15.880s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+[15.899s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.sh
+[15.921s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.dsv
+[15.939s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.bash
+[15.959s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.sh
+[15.981s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.zsh
+[16.001s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.dsv
+[16.023s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.dsv
+[16.047s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/packages/point_lio
+[16.075s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.093s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+[16.115s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+[16.134s] -- Symlinking: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.xml
+[16.159s] Invoked command in '/home/jjb/ros2_ws/build/point_lio' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/point_lio

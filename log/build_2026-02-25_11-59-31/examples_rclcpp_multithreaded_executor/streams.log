@@ -1,0 +1,67 @@
+[0.014s] Invoking command in '/home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor
+[0.146s] -- The C compiler identification is GNU 13.3.0
+[0.284s] -- The CXX compiler identification is GNU 13.3.0
+[0.319s] -- Detecting C compiler ABI info
+[1.134s] -- Detecting C compiler ABI info - done
+[1.152s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.152s] -- Detecting C compile features
+[1.154s] -- Detecting C compile features - done
+[1.176s] -- Detecting CXX compiler ABI info
+[1.628s] -- Detecting CXX compiler ABI info - done
+[1.647s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.648s] -- Detecting CXX compile features
+[1.651s] -- Detecting CXX compile features - done
+[1.655s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.014s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.224s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.273s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.337s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.364s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.396s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.432s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.568s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.574s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.751s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.785s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.839s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.971s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.001s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.286s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.289s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.290s] -- Configured cppcheck include dirs: 
+[3.290s] -- Configured cppcheck exclude dirs and/or files: 
+[3.294s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.295s] -- Configured cpplint exclude dirs and/or files: 
+[3.295s] -- Added test 'lint_cmake' to check CMake code style
+[3.297s] -- Added test 'uncrustify' to check C / C++ code style
+[3.298s] -- Configured uncrustify additional arguments: 
+[3.300s] -- Added test 'xmllint' to check XML markup files
+[3.305s] -- Configuring done (3.3s)
+[3.330s] -- Generating done (0.0s)
+[3.340s] -- Build files have been written to: /home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor
+[3.369s] Invoked command in '/home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor
+[3.372s] Invoking command in '/home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor -- -j4 -l4
+[3.494s] [ 50%] [32mBuilding CXX object CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o[0m
+[24.596s] [100%] [32m[1mLinking CXX executable multithreaded_executor[0m
+[25.557s] [100%] Built target multithreaded_executor
+[25.585s] Invoked command in '/home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor -- -j4 -l4
+[25.587s] Invoking command in '/home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor
+[25.607s] -- Install configuration: ""
+[25.609s] -- Execute custom install script
+[25.609s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/lib/examples_rclcpp_multithreaded_executor/multithreaded_executor
+[25.633s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_multithreaded_executor
+[25.657s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_multithreaded_executor
+[25.682s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.sh
+[25.700s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.dsv
+[25.723s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/path.sh
+[25.747s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/path.dsv
+[25.773s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.bash
+[25.792s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.sh
+[25.814s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.zsh
+[25.837s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.dsv
+[25.858s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/package.dsv
+[25.880s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/packages/examples_rclcpp_multithreaded_executor
+[25.905s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/cmake/examples_rclcpp_multithreaded_executorConfig.cmake
+[25.945s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/cmake/examples_rclcpp_multithreaded_executorConfig-version.cmake
+[25.970s] -- Symlinking: /home/jjb/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/package.xml
+[25.994s] Invoked command in '/home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/examples_rclcpp_multithreaded_executor

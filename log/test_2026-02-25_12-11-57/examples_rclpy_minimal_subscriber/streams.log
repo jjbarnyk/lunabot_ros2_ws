@@ -1,0 +1,17 @@
+[0.417s] Invoking command in '/home/jjb/ros2_ws/src/examples/rclpy/topics/minimal_subscriber': AMENT_PREFIX_PATH=/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber/pytest.xml --junit-prefix=examples_rclpy_minimal_subscriber -o cache_dir=/home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.108s] [1m============================= test session starts ==============================[0m
+[1.108s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[1.120s] cachedir: /home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber/.pytest_cache
+[1.120s] rootdir: /home/jjb/ros2_ws/src/examples/rclpy
+[1.120s] configfile: pytest.ini
+[1.120s] plugins: launch-testing-ros-0.26.11, ament-xmllint-0.17.4, ament-pep257-0.17.4, ament-lint-0.17.4, ament-flake8-0.17.4, ament-copyright-0.17.4, launch-testing-3.4.10, colcon-core-0.20.1, cov-4.1.0
+[1.325s] [1mcollecting ... [0m[1m
+[1.325s] collected 3 items                                                              [0m
+[1.326s] 
+[1.716s] test/test_copyright.py [32m.[0m[32m                                                 [ 33%][0m
+[1.901s] test/test_flake8.py [32m.[0m[32m                                                    [ 66%][0m
+[1.931s] test/test_pep257.py [32m.[0m[32m                                                    [100%][0m
+[1.932s] 
+[1.932s] - generated xml file: /home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber/pytest.xml -
+[1.932s] [32m============================== [32m[1m3 passed[0m[32m in 0.82s[0m[32m ===============================[0m
+[2.127s] Invoked command in '/home/jjb/ros2_ws/src/examples/rclpy/topics/minimal_subscriber' returned '0': AMENT_PREFIX_PATH=/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber/pytest.xml --junit-prefix=examples_rclpy_minimal_subscriber -o cache_dir=/home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/jjb/ros2_ws/build/examples_rclpy_minimal_subscriber:/home/jjb/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

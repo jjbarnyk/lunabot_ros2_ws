@@ -1,0 +1,35 @@
+[0.030s] Invoking command in '/home/jjb/ros2_ws/build/examples_rclcpp_minimal_action_server': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/examples/rclcpp/actions/minimal_action_server -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/examples_rclcpp_minimal_action_server
+[0.726s] -- The C compiler identification is GNU 13.3.0
+[1.211s] -- The CXX compiler identification is GNU 13.3.0
+[1.266s] -- Detecting C compiler ABI info
+[1.549s] -- Detecting C compiler ABI info - done
+[1.564s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.570s] -- Detecting C compile features
+[1.572s] -- Detecting C compile features - done
+[1.599s] -- Detecting CXX compiler ABI info
+[1.854s] -- Detecting CXX compiler ABI info - done
+[1.868s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.869s] -- Detecting CXX compile features
+[1.869s] -- Detecting CXX compile features - done
+[1.884s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.270s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.516s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.593s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[2.593s]   By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this
+[2.593s]   project has asked CMake to find a package configuration file provided by
+[2.594s]   "example_interfaces", but CMake did not find one.
+[2.594s] 
+[2.594s]   Could not find a package configuration file provided by
+[2.594s]   "example_interfaces" with any of the following names:
+[2.594s] 
+[2.595s]     example_interfacesConfig.cmake
+[2.595s]     example_interfaces-config.cmake
+[2.595s] 
+[2.600s]   Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or
+[2.605s] -- Configuring incomplete, errors occurred!
+[2.605s]   set "example_interfaces_DIR" to a directory containing one of the above
+[2.606s]   files.  If "example_interfaces" provides a separate development package or
+[2.606s]   SDK, be sure it has been installed.
+[2.606s] 
+[2.606s] [0m
+[2.611s] Invoked command in '/home/jjb/ros2_ws/build/examples_rclcpp_minimal_action_server' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/examples/rclcpp/actions/minimal_action_server -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/examples_rclcpp_minimal_action_server

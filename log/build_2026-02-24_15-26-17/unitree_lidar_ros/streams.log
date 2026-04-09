@@ -1,0 +1,98 @@
+[0.021s] Invoking command in '/home/jjb/ros2_ws/build/unitree_lidar_ros': /usr/bin/cmake /home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros/src/unitree_lidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/unitree_lidar_ros
+[0.042s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.042s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.043s]   CMake.
+[0.043s] 
+[0.043s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.043s]   CMake that the project does not need compatibility with older versions.
+[0.043s] 
+[0.043s] [0m
+[0.223s] -- The C compiler identification is GNU 13.3.0
+[0.400s] -- The CXX compiler identification is GNU 13.3.0
+[0.429s] -- Detecting C compiler ABI info
+[0.681s] -- Detecting C compiler ABI info - done
+[0.700s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.700s] -- Detecting C compile features
+[0.700s] -- Detecting C compile features - done
+[0.721s] -- Detecting CXX compiler ABI info
+[0.979s] -- Detecting CXX compiler ABI info - done
+[0.995s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.995s] -- Detecting CXX compile features
+[0.996s] -- Detecting CXX compile features - done
+[1.052s] [33mCMake Warning (dev) at /usr/lib/aarch64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[1.056s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.056s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.056s]   cmake_policy command to set the policy and suppress this warning.
+[1.056s] 
+[1.056s]   CMake variable FLANN_ROOT is set to:
+[1.056s] 
+[1.057s]     /usr
+[1.057s] 
+[1.057s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.057s]   .cmake module might still use it.
+[1.057s] Call Stack (most recent call first):
+[1.057s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[1.057s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[1.057s]   /usr/lib/aarch64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[1.057s]   CMakeLists.txt:9 (find_package)
+[1.057s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.058s] [0m
+[1.058s] -- Found flann version 1.9.2
+[2.522s] -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+[2.536s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[5.538s] -- Checking for module 'libusb-1.0'
+[5.566s] --   Found libusb-1.0, version 1.0.27
+[5.654s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[5.656s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.776s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.780s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[5.793s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.3")  
+[5.811s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.43") 
+[6.475s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.486s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.085s] -- Found Qhull version 8.0.2
+[7.697s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.302s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[8.303s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[8.304s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[8.306s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[8.307s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[8.309s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[8.310s] -- Found PCL_2D: /usr/include/pcl-1.14  
+[8.310s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.14  
+[8.312s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[8.314s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[8.315s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[8.317s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[8.318s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[8.320s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[8.322s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[8.324s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[8.326s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[8.327s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[8.330s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[8.331s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[8.333s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  
+[8.334s] -- Found PCL_MODELER: /usr/include/pcl-1.14  
+[8.335s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  
+[8.337s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[8.339s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[8.347s] [31mCMake Error at CMakeLists.txt:11 (find_package):
+[8.347s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[8.347s]   asked CMake to find a package configuration file provided by "catkin", but
+[8.348s]   CMake did not find one.
+[8.348s] 
+[8.348s]   Could not find a package configuration file provided by "catkin" with any
+[8.348s]   of the following names:
+[8.348s] 
+[8.349s]     catkinConfig.cmake
+[8.349s]     catkin-config.cmake
+[8.350s] 
+[8.350s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[8.350s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[8.350s]   provides a separate development package or SDK, be sure it has been
+[8.350s]   installed.
+[8.350s] 
+[8.350s] [0m
+[8.351s] -- Configuring incomplete, errors occurred!
+[8.398s] Invoked command in '/home/jjb/ros2_ws/build/unitree_lidar_ros' returned '1': /usr/bin/cmake /home/jjb/ros2_ws/src/unilidar_sdk/unitree_lidar_ros/src/unitree_lidar_ros -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/unitree_lidar_ros

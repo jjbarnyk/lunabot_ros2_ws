@@ -1,0 +1,47 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pointlio_mapping[0m
+[100%] Built target pointlio_mapping
+-- Install configuration: ""
+-- Installing: /home/jjb/ros2_ws/install/point_lio/lib/point_lio/pointlio_mapping
+-- Set non-toolchain portion of runtime path of "/home/jjb/ros2_ws/install/point_lio/lib/point_lio/pointlio_mapping" to ""
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/mid360.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/horizon.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l1.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/velody16.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/avia.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/config/ouster64.yaml
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_avia.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/rviz_cfg
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.sh
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.sh
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/environment/path.dsv
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.bash
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.sh
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.zsh
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/local_setup.dsv
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.dsv
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/ament_index/resource_index/packages/point_lio
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake
+-- Installing: /home/jjb/ros2_ws/install/point_lio/share/point_lio/package.xml

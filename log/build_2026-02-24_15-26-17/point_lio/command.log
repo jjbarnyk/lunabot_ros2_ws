@@ -1,0 +1,1 @@
+Invoking command in '/home/jjb/ros2_ws/build/point_lio': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jjb/ros2_ws/src/point_lio_ros2 -DCMAKE_INSTALL_PREFIX=/home/jjb/ros2_ws/install/point_lio

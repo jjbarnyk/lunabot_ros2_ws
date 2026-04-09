@@ -1,0 +1,27 @@
+[0.022s] Invoking command in '/home/jjb/ros2_ws/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/unitree_lidar_ros2 -- -j4 -l4
+[0.168s] [ 50%] [32mBuilding CXX object CMakeFiles/unitree_lidar_ros2_node.dir/src/unitree_lidar_ros2_node.cpp.o[0m
+[30.476s] [100%] [32m[1mLinking CXX executable unitree_lidar_ros2_node[0m
+[31.993s] [100%] Built target unitree_lidar_ros2_node
+[32.021s] Invoked command in '/home/jjb/ros2_ws/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jjb/ros2_ws/build/unitree_lidar_ros2 -- -j4 -l4
+[32.041s] Invoking command in '/home/jjb/ros2_ws/build/unitree_lidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/unitree_lidar_ros2
+[32.062s] -- Install configuration: ""
+[32.062s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node
+[32.068s] -- Set non-toolchain portion of runtime path of "/home/jjb/ros2_ws/install/unitree_lidar_ros2/lib/unitree_lidar_ros2/unitree_lidar_ros2_node" to ""
+[32.068s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/view.rviz
+[32.068s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/launch.py
+[32.068s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/ament_index/resource_index/package_run_dependencies/unitree_lidar_ros2
+[32.069s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/ament_index/resource_index/parent_prefix_path/unitree_lidar_ros2
+[32.070s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.sh
+[32.070s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/ament_prefix_path.dsv
+[32.071s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.sh
+[32.071s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/environment/path.dsv
+[32.072s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.bash
+[32.072s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.sh
+[32.073s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.zsh
+[32.073s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/local_setup.dsv
+[32.074s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.dsv
+[32.075s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/ament_index/resource_index/packages/unitree_lidar_ros2
+[32.075s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config.cmake
+[32.075s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/cmake/unitree_lidar_ros2Config-version.cmake
+[32.076s] -- Installing: /home/jjb/ros2_ws/install/unitree_lidar_ros2/share/unitree_lidar_ros2/package.xml
+[32.080s] Invoked command in '/home/jjb/ros2_ws/build/unitree_lidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jjb/ros2_ws/build/unitree_lidar_ros2

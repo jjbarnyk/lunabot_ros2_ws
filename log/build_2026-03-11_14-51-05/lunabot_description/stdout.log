@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/urdf
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/urdf/lunabot.urdf
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/launch
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/launch/description.launch.py
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/ament_index/resource_index/package_run_dependencies/lunabot_description
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/ament_index/resource_index/parent_prefix_path/lunabot_description
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/environment/ament_prefix_path.sh
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/environment/ament_prefix_path.dsv
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/environment/path.sh
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/environment/path.dsv
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/local_setup.bash
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/local_setup.sh
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/local_setup.zsh
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/local_setup.dsv
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/package.dsv
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/ament_index/resource_index/packages/lunabot_description
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/cmake/lunabot_descriptionConfig.cmake
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/cmake/lunabot_descriptionConfig-version.cmake
+-- Installing: /home/jjb/ros2_ws/install/lunabot_description/share/lunabot_description/package.xml
