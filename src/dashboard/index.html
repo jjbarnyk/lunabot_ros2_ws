@@ -2,12 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ROS2 Dashboard</title>
-</head>
-<body>
-  <p id="status">Connecting...</p>
+  <title>Lunabot ROS2 Dashboard</title>
 
-  <!-- roslibjs from CDN -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .panel {
+      border: 1px solid #ccc;
+      padding: 15px;
+      min-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    #camera-feed {
+      width: 640px;
+      max-width: 100%;
+      border: 1px solid #444;
+    }
+
+    button {
+      margin: 4px;
+      padding: 8px 14px;
+    }
+
+    .status {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .connected {
+      color: green;
+    }
+
+    .disconnected {
+      color: red;
+    }
+  </style>
+</head>
+
+<body tabindex="0">
+  <h1>Lunabot ROS2 Dashboard</h1>
+
+  <p id="focus-msg">Click anywhere on this page, then use W/A/S/D. Space = stop.</p>
+
+  <p id="status" class="status disconnected">Connecting...</p>
+
+  <div class="row">
+    <div class="panel">
+      <h3>Camera Feed</h3>
+      <img id="camera-feed" src="" alt="Camera stream will appear here">
+      <p>Camera URL:</p>
+      <p id="camera-url"></p>
+    </div>
+
+    <div class="panel">
+      <h3>Robot State</h3>
+      <p>X Position: <span id="pos-x">0.00</span> m</p>
+      <p>Y Position: <span id="pos-y">0.00</span> m</p>
+      <p>Linear Velocity: <span id="vel-x">0.00</span> m/s</p>
+      <p>Closest Object: <span id="closest-obj">0.00</span> m</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>Teleop Controls</h3>
+    <p>Keyboard: W/A/S/D to move, Space to stop</p>
+
+    <button onclick="sendVelocity(0.3, 0.0)">Forward</button>
+    <button onclick="sendVelocity(-0.3, 0.0)">Back</button>
+    <button onclick="sendVelocity(0.0, 0.5)">Left</button>
+    <button onclick="sendVelocity(0.0, -0.5)">Right</button>
+    <button onclick="sendVelocity(0.0, 0.0)">Stop</button>
+  </div>
+
+  <div class="panel">
+    <h3>ROS Info</h3>
+    <button onclick="getTopics()">List Topics</button>
+    <p>Open browser console with F12 to see topic list.</p>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
   <script src="app.js"></script>
 </body>
