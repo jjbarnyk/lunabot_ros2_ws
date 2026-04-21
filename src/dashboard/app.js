@@ -4,7 +4,7 @@
 // ==============================
 
 const CONFIG = {
-  rosbridgeUrl:    'ws://lunabot.local:9090',
+  rosbridgeUrl:    'ws://192.168.0.100:9090',
   cmdVelTopic:     '/cmd_vel',
   odomTopic:       '/odom',
   scanTopic:       '/scan',
