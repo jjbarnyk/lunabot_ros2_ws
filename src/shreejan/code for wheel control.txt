@@ -1,0 +1,295 @@
+"""
+motor_control_node.py
+=====================
+A ROS 2 node that handles motor control for a 4-wheel differential drive robot
+communicating over CAN bus.
+
+How it works:
+  1. Subscribes to /cmd_vel to receive velocity commands (linear.x, angular.z).
+  2. Converts velocity commands into individual wheel speeds using
+     differential drive kinematics.
+  3. Clamps wheel speeds to safe motor limits.
+  4. Sends CAN frames to each motor controller (one per wheel or one per side).
+  5. Publishes odometry to /odom.
+
+CAN Bus Layout (4-wheel differential drive):
+  CAN ID 0x101 → Front-Left  motor controller
+  CAN ID 0x102 → Front-Right motor controller
+  CAN ID 0x103 → Rear-Left   motor controller
+  CAN ID 0x104 → Rear-Right  motor controller
+
+  Left side  (0x101, 0x103) → same left_speed
+  Right side (0x102, 0x104) → same right_speed
+
+CAN Frame Format (8 bytes):
+  Byte 0-1: Speed value (int16, big-endian) — range -32768 to 32767
+  Byte 2:   Direction flag (0x01 = forward, 0x00 = reverse)
+  Byte 3-7: Reserved (0x00)
+
+Topics:
+  Subscribed : /cmd_vel  (geometry_msgs/Twist) — velocity commands
+  Published  : /odom     (nav_msgs/Odometry)   — estimated position
+"""
+
+import rclpy                          # ROS 2 Python client library
+from rclpy.node import Node           # Base class for all ROS 2 nodes
+from geometry_msgs.msg import Twist   # Incoming velocity command message
+from nav_msgs.msg import Odometry     # Outgoing odometry message
+import can                            # python-can library — handles CAN bus communication
+import struct                         # Used to pack speed values into CAN frame bytes
+import math                           # Used for odometry trigonometry
+
+
+# ─── ROBOT PHYSICAL CONSTANTS ────────────────────────────────────────────────
+
+WHEEL_BASE        = 0.3     # (metres) Left-to-right distance between wheels
+                             # Tune this if turns are over/under-rotating
+
+WHEEL_RADIUS      = 0.05    # (metres) Radius of each wheel
+                             # Used for speed scaling calculations
+
+MAX_LINEAR_SPEED  = 1.0     # (m/s) Maximum expected real-world forward speed
+                             # Used to scale m/s → CAN speed value
+
+# ─── CAN BUS SETTINGS ────────────────────────────────────────────────────────
+
+CAN_INTERFACE  = 'can0'     # Name of the CAN interface on your Linux system
+                             # Common values: 'can0', 'can1', 'vcan0' (virtual, for testing)
+                             # Set up with: ip link set can0 up type can bitrate 1000000
+
+CAN_BITRATE    = 1000000    # (bits/s) CAN bus speed — must match all devices on the bus
+                             # Common values: 250000, 500000, 1000000
+
+# CAN IDs for each motor controller
+# Each wheel has its own controller on the CAN bus, identified by a unique ID
+CAN_ID_FRONT_LEFT  = 0x101  # Front-left  wheel motor controller CAN ID
+CAN_ID_FRONT_RIGHT = 0x102  # Front-right wheel motor controller CAN ID
+CAN_ID_REAR_LEFT   = 0x103  # Rear-left   wheel motor controller CAN ID
+CAN_ID_REAR_RIGHT  = 0x104  # Rear-right  wheel motor controller CAN ID
+
+# ─── SPEED SCALING ───────────────────────────────────────────────────────────
+
+CAN_SPEED_MAX  =  32767     # Maximum int16 value sent in CAN frame (full forward)
+CAN_SPEED_MIN  = -32767     # Minimum int16 value sent in CAN frame (full reverse)
+
+
+class MotorControlNode(Node):
+    """
+    Motor control node for a 4-wheel differential drive robot using CAN bus.
+    Converts /cmd_vel Twist messages into per-wheel CAN frames.
+    """
+
+    def __init__(self):
+        """
+        Constructor — runs once at startup.
+        Opens the CAN bus, sets up subscriber and publisher.
+        """
+        super().__init__('motor_control_node')
+
+        # ── CAN BUS CONNECTION ────────────────────────────────────────────────
+        try:
+            # Open the CAN bus interface using python-can
+            # bustype='socketcan' is standard on Linux (Raspberry Pi, Jetson, etc.)
+            self.can_bus = can.interface.Bus(
+                channel=CAN_INTERFACE,
+                bustype='socketcan'     # Use 'kvaser', 'pcan', 'slcan' for other adapters
+            )
+            self.get_logger().info(f'CAN bus connected on {CAN_INTERFACE}')
+        except Exception as e:
+            self.get_logger().error(f'Failed to open CAN bus: {e}')
+            raise SystemExit(1)
+
+        # ── SUBSCRIBER ───────────────────────────────────────────────────────
+        # Receives velocity commands from the autonomous node or nav stack
+        self.cmd_vel_sub = self.create_subscription(
+            Twist,
+            '/cmd_vel',
+            self.cmd_vel_callback,
+            10
+        )
+
+        # ── PUBLISHER ────────────────────────────────────────────────────────
+        # Publishes estimated robot position for the navigation stack
+        self.odom_pub = self.create_publisher(Odometry, '/odom', 10)
+
+        # ── ODOMETRY STATE ───────────────────────────────────────────────────
+        self.x     = 0.0    # (metres)  Estimated X position
+        self.y     = 0.0    # (metres)  Estimated Y position
+        self.theta = 0.0    # (radians) Estimated heading — 0 = facing forward
+
+        # Time of last update, used to compute dt between velocity commands
+        self.last_time = self.get_clock().now()
+
+        self.get_logger().info('Motor control node started.')
+
+    # ─────────────────────────────────────────────────────────────────────────
+
+    def cmd_vel_callback(self, msg):
+        """
+        Called every time a new /cmd_vel message arrives.
+        Converts Twist → differential drive speeds → CAN frames.
+
+        Parameters:
+            msg (Twist):
+                msg.linear.x  — forward/backward speed in m/s
+                msg.angular.z — rotational speed in rad/s (+ = left, - = right)
+        """
+
+        # ── STEP 1: READ INCOMING VELOCITY ───────────────────────────────────
+        linear  = msg.linear.x    # Forward speed  (m/s)
+        angular = msg.angular.z   # Rotation speed (rad/s)
+
+        # ── STEP 2: DIFFERENTIAL DRIVE KINEMATICS ────────────────────────────
+        # Split combined velocity into left/right side speeds.
+        # Left and right sides run at different speeds to achieve turning.
+        #
+        #   left_speed  = linear - angular * (wheel_base / 2)
+        #   right_speed = linear + angular * (wheel_base / 2)
+        #
+        # Example — turn left (angular.z = +0.5):
+        #   left wheels slow down, right wheels speed up → robot turns left
+
+        left_speed  = linear - angular * (WHEEL_BASE / 2)   # m/s for left  side
+        right_speed = linear + angular * (WHEEL_BASE / 2)   # m/s for right side
+
+        # ── STEP 3: SCALE m/s → CAN INT16 VALUE ──────────────────────────────
+        # CAN frames carry integer values, not floats.
+        # Scale the speed (m/s) to fit within int16 range (-32767 to 32767).
+        left_can_speed  = int((left_speed  / MAX_LINEAR_SPEED) * CAN_SPEED_MAX)
+        right_can_speed = int((right_speed / MAX_LINEAR_SPEED) * CAN_SPEED_MAX)
+
+        # ── STEP 4: CLAMP TO SAFE RANGE ──────────────────────────────────────
+        left_can_speed  = max(CAN_SPEED_MIN, min(CAN_SPEED_MAX, left_can_speed))
+        right_can_speed = max(CAN_SPEED_MIN, min(CAN_SPEED_MAX, right_can_speed))
+
+        # ── STEP 5: SEND CAN FRAMES TO ALL 4 WHEELS ──────────────────────────
+        # Left side:  front-left and rear-left get the same speed
+        # Right side: front-right and rear-right get the same speed
+        self.send_can_frame(CAN_ID_FRONT_LEFT,  left_can_speed)
+        self.send_can_frame(CAN_ID_REAR_LEFT,   left_can_speed)
+        self.send_can_frame(CAN_ID_FRONT_RIGHT, right_can_speed)
+        self.send_can_frame(CAN_ID_REAR_RIGHT,  right_can_speed)
+
+        # ── STEP 6: UPDATE ODOMETRY ───────────────────────────────────────────
+        self.update_odometry(linear, angular)
+
+    # ─────────────────────────────────────────────────────────────────────────
+
+    def send_can_frame(self, can_id, speed):
+        """
+        Builds and sends a CAN frame to a single motor controller.
+
+        Frame format (8 bytes):
+          Byte 0-1 : Speed as int16 big-endian  (e.g. 16000 → 0x3E 0x80)
+          Byte 2   : Direction flag              (0x01 = forward, 0x00 = reverse)
+          Byte 3-7 : Reserved / padding          (0x00)
+
+        Parameters:
+            can_id (int): CAN ID of the target motor controller (e.g. 0x101)
+            speed  (int): Signed speed value — range -32767 to 32767
+        """
+
+        # Determine direction flag based on sign of speed
+        direction = 0x01 if speed >= 0 else 0x00   # 1 = forward, 0 = reverse
+
+        # Use absolute value for the speed bytes (direction is separate)
+        abs_speed = abs(speed)
+
+        # Pack into 8 bytes:
+        # '>' = big-endian, 'H' = unsigned short (2 bytes), 'B' = unsigned byte
+        # Remaining 5 bytes are zero padding
+        data = struct.pack('>HB5x', abs_speed, direction)
+        # '>HB5x' breakdown:
+        #   >  = big-endian byte order
+        #   H  = unsigned short (2 bytes) → abs_speed
+        #   B  = unsigned byte  (1 byte)  → direction
+        #   5x = 5 zero-padding bytes
+
+        # Build the CAN message
+        msg = can.Message(
+            arbitration_id=can_id,   # Which motor controller this frame is addressed to
+            data=data,               # 8-byte payload
+            is_extended_id=False     # Standard 11-bit CAN ID (not 29-bit extended)
+        )
+
+        # Send the frame on the bus
+        try:
+            self.can_bus.send(msg)
+            self.get_logger().debug(
+                f'CAN → ID: {hex(can_id)} | Speed: {speed} | Dir: {direction}'
+            )
+        except can.CanError as e:
+            self.get_logger().error(f'CAN send failed for ID {hex(can_id)}: {e}')
+
+    # ─────────────────────────────────────────────────────────────────────────
+
+    def update_odometry(self, linear, angular):
+        """
+        Estimates robot position using dead reckoning (velocity integration).
+        Replace with encoder feedback from CAN for better accuracy.
+
+        Parameters:
+            linear  (float): Forward speed in m/s
+            angular (float): Rotational speed in rad/s
+        """
+
+        # Compute time elapsed since last update
+        current_time = self.get_clock().now()
+        dt = (current_time - self.last_time).nanoseconds / 1e9  # nanoseconds → seconds
+        self.last_time = current_time
+
+        # Integrate velocity into position
+        self.x     += linear * math.cos(self.theta) * dt
+        self.y     += linear * math.sin(self.theta) * dt
+        self.theta += angular * dt
+
+        # Build and publish the Odometry message
+        odom = Odometry()
+        odom.header.stamp    = current_time.to_msg()
+        odom.header.frame_id = 'odom'
+        odom.child_frame_id  = 'base_link'
+
+        odom.pose.pose.position.x = self.x
+        odom.pose.pose.position.y = self.y
+        odom.pose.pose.position.z = 0.0
+
+        # Convert heading angle to quaternion (ROS standard)
+        odom.pose.pose.orientation.z = math.sin(self.theta / 2)
+        odom.pose.pose.orientation.w = math.cos(self.theta / 2)
+
+        odom.twist.twist.linear.x  = linear
+        odom.twist.twist.angular.z = angular
+
+        self.odom_pub.publish(odom)
+
+    # ─────────────────────────────────────────────────────────────────────────
+
+    def destroy_node(self):
+        """
+        Called on shutdown. Sends zero speed to all motors and closes CAN bus.
+        """
+        self.get_logger().info('Shutting down — stopping all motors.')
+
+        # Send zero speed to every wheel before closing
+        for can_id in [CAN_ID_FRONT_LEFT, CAN_ID_FRONT_RIGHT,
+                       CAN_ID_REAR_LEFT,  CAN_ID_REAR_RIGHT]:
+            self.send_can_frame(can_id, 0)
+
+        # Close the CAN bus cleanly
+        self.can_bus.shutdown()
+
+        super().destroy_node()
+
+
+# ─── ENTRY POINT ─────────────────────────────────────────────────────────────
+
+def main(args=None):
+    rclpy.init(args=args)
+    node = MotorControlNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
